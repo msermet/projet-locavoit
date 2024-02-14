@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        section {
+            padding: 60px 0;
+        }
+    </style>
+    <title>LocaVoit</title>
+    <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
+</head>
+<body>
+<!--    Barre de navigation-->
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 fw-bold text-light" href="#"><img height="50" src="./assets/images/logo-locavoit.png" alt="Logo Spotify"/><span class="ms-2">LocaVoit</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 me-3 text-light fw-bold" aria-current="page" href="#tarifs">Notre activité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 me-3 text-light fw-bold" aria-current="page" href="#avis">Organigramme de notre société</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 me-3 text-light fw-bold" aria-current="page" href="#contact">Contacts</a>
+                    </li>
+                </ul>
+                <button class="btn btn-success fw-bold" type="submit">Abonnez vous</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <!--    Présentation-->
+    <section id="presentation" class="bg-secondary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-7 col-xl-7 text-md-start pt-5">
+                    <h1>LocaVoit - Location de véhicules</h1>
+                    <h2 class="pt-3">La liberté de rouler pas cher</h2>
+                    <p class="pt-3 fs-6 fst-italic">Louez des véhicules de gammes en France et dans le monde entier. Notre flotte compte plus de 200 voitures de location, dont les modèles proviennent des meilleurs constructeurs automobiles au monde, notamment les favoris allemands tels que BMW, Mercedes, Audi ainsi que bien d'autres encore.
+                    </p>
+                    <div class="pt-3">
+                        <button type="button" class="btn btn-success fw-bold">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img class="d-md-block d-none mx-auto" src="./assets/images/logo-locavoit.png" alt="Logo Spotify" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    activités-->
+    <section id="contenu" class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h1>Nos activités</h1>
+                <p>Un rapide aperçu des avantages des abonnements!</p>
+            </div>
+            <div class="row pt-5 align-items-center">
+                <div class="col-lg-6 col-xl-6">
+                    <img class="d-lg-block my-auto mx-auto" src="./assets/images/image-spotify.png" alt="Logo Spotify" />
+                </div>
+                <div class="col-lg-6 col-xl-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Prix défiant toute concurrence
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque ex illo iste, iusto laboriosam laudantium maxime natus nobis, non omnis porro praesentium qui sapiente similique suscipit ut vel vero!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Musique de votre choix et partout
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laborum non provident recusandae vitae voluptas. Adipisci animi assumenda beatae cum cumque distinctio dolore ea earum eius iure, nulla sit voluptatum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                    Tous vos artistes préférés sont là
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laborum non provident recusandae vitae voluptas. Adipisci animi assumenda beatae cum cumque distinctio dolore ea earum eius iure, nulla sit voluptatum!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                    Téléchargements rapides
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti fugit illo saepe. A aliquid debitis illo inventore nisi quisquam voluptate! Illo magnam maxime natus officiis porro praesentium provident soluta suscipit!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                                    Style ergonomique et agréable
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolor magnam, pariatur qui reiciendis sed vero voluptatibus. Autem deserunt dolores error esse impedit incidunt maxime nisi odio, saepe ut? Neque!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Tarifs-->
+    <section id="tarifs">
+        <div class="container">
+            <div class="text-center">
+                <h1>Tarifs</h1>
+                <p class="text-secondary">Choisir le plan adapté à vos besoins</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 p-0 pt-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Starter Edition</h5>
+                            <p>Abonnement avec publicités</p>
+                            <h1 class="text-success fw-bold">6.99€</h1>
+                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet. Corporis dolorum explicabo impedit ipsa ipsum magni pariatur quas, ratione voluptates. Libero minima molestiae nesciunt non quaerat quisquam repudiandae rerum vel vero.</p>
+                            <button type="button" class="btn btn-outline-success">Achetez maintenant</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 p-0 my-auto">
+                    <div class="card border border-success">
+                        <div class="card-header text-center text-success">
+                            Le plus populaire
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Complete Edition</h5>
+                            <p>Abonnement sans publicité</p>
+                            <h1 class="text-success fw-bold">10.99€</h1>
+                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error fugiat, ipsa magnam nisi obcaecati quaerat qui ratione reiciendis repellendus sed sit tempora ullam unde velit, veritatis vero voluptatibus voluptatum.</p>
+                            <button type="button" class="btn btn-outline-success">Achetez maintenant</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 p-0 pt-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Ultimate Edition</h5>
+                            <p>Abonnement avec téléchargement</p>
+                            <h1 class="text-success fw-bold">14.99€</h1>
+                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque, cum delectus dolor et, fugit illum modi natus necessitatibus obcaecati possimus quae quam, rem repellendus similique sunt ullam voluptates voluptatum.</p>
+                            <button type="button" class="btn btn-outline-success">Achetez maintenant</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Avis-->
+    <section id="avis" class="bg-light">
+        <div class="container">
+            <h1 class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+            </svg>Avis</h1>
+            <p class="text-center fs-5 fw-lighter">Ce que les utilisateurs pensent des abonnements...</p>
+            <div class="pt-5">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        </h3>
+                        <h5 class="mb-1">Vraiment génial cet abonnement</h5>
+                        <p class="mb-1">Félicitations continuez ainsi je n'irai pas chez la concurrence! (PS: je ne suis pas un bot)</p>
+                        <small class="text-body-secondary">Avis de Phong le 30/12/2023</small>
+                    </li>
+                    <li class="list-group-item">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        </h3>
+                        <h5 class="mb-1">Je recommande c'est rentable</h5>
+                        <p class="mb-1">Grâce à cet abonnement, j'ai pu écouter le nouvel album de Ouaipaul c'était super !</p>
+                        <small class="text-body-secondary">Avis de Dydy le 12/02/2022</small>
+                    </li>
+                    <li class="list-group-item">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        </h3>
+                        <h5 class="mb-1">Super</h5>
+                        <p class="mb-1">Pleins de minutes gagnées grâce à l'absence de pub, je vais donc pouvoir durant mon temps libre me mettre Cricket en club.</p>
+                        <small class="text-body-secondary">Avis de Léo le 03/09/2021</small>
+                    </li>
+                    <li class="list-group-item">
+                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                            <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
+                        </svg>
+                        </h3>
+                        <h5 class="mb-1">Presque parfait !</h5>
+                        <p class="mb-1">J'aime tout sauf Spotify !</p>
+                        <small class="text-body-secondary">Avis de Hugo le 30/05/2020</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--    Contact-->
+    <section id="contact">
+        <div class="container">
+            <h1 class="text-center">Contactez-nous !</h1>
+            <p class="text-center fs-5 fw-lighter">Vous avez une question? Remplissez le formulaire...</p>
+            <form>
+                <label for="basic-url1" class="form-label">Votre email :</label>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                        </svg></span>
+                        <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3 basic-addon4"  placeholder="ex : pierre@exemple.fr">
+                    </div>
+                </div>
+                <label for="basic-url2" class="form-label">Votre nom :</label>
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg></span>
+                        <input type="text" class="form-control" id="basic-url2" aria-describedby="basic-addon3 basic-addon4"  placeholder="ex : Pierre">
+                    </div>
+                </div>
+                <label for="disabledSelect" class="form-label">Quel est le thème de votre question ?</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
+                      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg></span>
+                    <select id="disabledSelect" class="form-select">
+                        <option value="1">Contenu de l'abonnement</option>
+                        <option value="2">Prix pour les étudiants</option>
+                        <option value="3">Annuler l'abonnement</option>
+                        <option value="4">Créer une playlist</option>
+                    </select>
+                </div>
+                <div class="input-group pt-3">
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Votre question..."></textarea>
+                </div>
+                <div class="text-center pt-4">
+                    <button type="submit" class="btn btn-secondary">envoyer</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+
+</footer>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
