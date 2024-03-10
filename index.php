@@ -17,33 +17,9 @@
     <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
 </head>
 <body>
-<!--    Barre de navigation-->
-<header>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand fs-3 fw-bold text-light" href="#"><img height="50" src="./assets/images/logo-locavoit.png" alt="Logo Spotify"/><span class="ms-2">LocaVoit</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5 me-3 text-light fw-bold" aria-current="page" href="#tarifs">Notre activité</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5 me-3 text-light fw-bold" aria-current="page" href="#avis">Organigramme de notre société</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active fs-5 me-3 text-light fw-bold" aria-current="page" href="#contact">Contacts</a>
-                    </li>
-                </ul>
-                <button class="btn btn-success fw-bold" type="submit">Abonnez vous</button>
-            </div>
-        </div>
-    </nav>
-</header>
 <main>
+    <!--Insertion d'un menu-->
+    <?php include_once '_partials/menu.php' ?>
     <!--    Présentation-->
     <section id="presentation" class="bg-secondary">
         <div class="container">
@@ -54,7 +30,7 @@
                     <p class="pt-3 fs-6">Louez des véhicules de gammes en France et dans le monde entier. Notre flotte compte plus de 200 voitures de location, dont les modèles proviennent des meilleurs constructeurs automobiles au monde, notamment les favoris allemands tels que BMW, Mercedes, Audi ainsi que bien d'autres encore.
                     </p>
                     <div class="pt-3">
-                        <button type="button" class="btn btn-success fw-bold">En savoir plus</button>
+                        <a href="#pied-de-page"><button class="btn btn-success fs-6" type="button">Nos coordonnées</button></a>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -63,9 +39,9 @@
             </div>
         </div>
     </section>
-    <div class="bg-dark pb-1 opacity-75"></div>
+    <div class="border-top border-4"></div>
     <!--    activités-->
-    <section id="contenu">
+    <section id="activites">
         <div class="container">
             <div class="text-center text-black">
                 <h1>Nos activités</h1>
@@ -118,7 +94,7 @@
             </div>
         </div>
     </section>
-    <div class="bg-dark pb-1 opacity-25"></div>
+    <div class="border-top border-3"></div>
     <!--    Tarifs-->
     <section id="tarifs" class="bg-light">
         <div class="container">
@@ -166,7 +142,7 @@
             </div>
         </div>
     </section>
-    <div class="bg-dark pb-1 opacity-25"></div>
+    <div class="border-top border-3"></div>
     <!--    Organigramme-->
     <section id="organigramme">
         <div class="container text-center text-black">
@@ -175,7 +151,7 @@
             <img src="./assets/images/organigramme.png" class="w-100" alt="">
         </div>
     </section>
-    <div class="bg-dark pb-1 opacity-25"></div>
+    <div class="border-top border-3"></div>
     <!--    Fiches de poste-->
     <section id="fichesdeposte" class="bg-light">
         <div class="container text-center text-black">
@@ -320,138 +296,47 @@
             </div>
         </div>
     </section>
-    <div class="bg-dark pb-1 opacity-25"></div>
-    <!--    Avis-->
-    <section id="avis">
-        <div class="container text-black">
-            <h1 class="text-center"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
-                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
-            </svg>Avis</h1>
-            <p class="text-center fs-5 fw-lighter">Ce que les utilisateurs pensent des abonnements...</p>
-            <div class="pt-5">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg>
-                        </h3>
-                        <h5 class="mb-1">Vraiment génial cet abonnement</h5>
-                        <p class="mb-1">Félicitations continuez ainsi je n'irai pas chez la concurrence! (PS: je ne suis pas un bot)</p>
-                        <small class="text-body-secondary">Avis de Phong le 30/12/2023</small>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg>
-                        </h3>
-                        <h5 class="mb-1">Je recommande c'est rentable</h5>
-                        <p class="mb-1">Grâce à cet abonnement, j'ai pu écouter le nouvel album de Ouaipaul c'était super !</p>
-                        <small class="text-body-secondary">Avis de Dydy le 12/02/2022</small>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg>
-                        </h3>
-                        <h5 class="mb-1">Super</h5>
-                        <p class="mb-1">Pleins de minutes gagnées grâce à l'absence de pub, je vais donc pouvoir durant mon temps libre me mettre Cricket en club.</p>
-                        <small class="text-body-secondary">Avis de Léo le 03/09/2021</small>
-                    </li>
-                    <li class="list-group-item">
-                        <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill me-1" viewBox="0 0 16 16">
-                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
-                            <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"/>
-                        </svg>
-                        </h3>
-                        <h5 class="mb-1">Presque parfait !</h5>
-                        <p class="mb-1">J'aime tout sauf Spotify !</p>
-                        <small class="text-body-secondary">Avis de Hugo le 30/05/2020</small>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <div class="bg-dark pb-1 opacity-25"></div>
+    <div class="border-top border-3"></div>
     <!--    Contact-->
-    <section id="contact" class="bg-light">
-        <div class="container text-black">
-            <h1 class="text-center">Contactez-nous !</h1>
-            <p class="text-center fs-5 fw-lighter">Vous avez une question? Remplissez le formulaire...</p>
-            <form>
-                <label for="basic-url1" class="form-label">Votre email :</label>
-                <div class="mb-3">
-                    <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
-                        </svg></span>
-                        <input type="text" class="form-control" id="basic-url1" aria-describedby="basic-addon3 basic-addon4"  placeholder="ex : pierre@exemple.fr">
-                    </div>
-                </div>
-                <label for="basic-url2" class="form-label">Votre nom :</label>
-                <div class="mb-3">
-                    <div class="input-group">
-                        <span class="input-group-text" id="basic-addon3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                        </svg></span>
-                        <input type="text" class="form-control" id="basic-url2" aria-describedby="basic-addon3 basic-addon4"  placeholder="ex : Pierre">
-                    </div>
-                </div>
-                <label for="disabledSelect" class="form-label">Quel est le thème de votre question ?</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
-                      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
-                    </svg></span>
-                    <select id="disabledSelect" class="form-select">
-                        <option value="1">Contenu de l'abonnement</option>
-                        <option value="2">Prix pour les étudiants</option>
-                        <option value="3">Annuler l'abonnement</option>
-                        <option value="4">Créer une playlist</option>
-                    </select>
-                </div>
-                <div class="input-group pt-3">
-                    <textarea class="form-control" aria-label="With textarea" placeholder="Votre question..."></textarea>
-                </div>
-                <div class="text-center pt-4">
-                    <button type="submit" class="btn btn-secondary">envoyer</button>
-                </div>
-            </form>
-        </div>
-    </section>
 </main>
-<footer>
+    <div class="bg-secondary">
+        <footer id="pied-de-page" class="py-5 container">
+            <div class="row">
+                <div class="col-6 col-md-2">
+                    <h5>Redirection</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#presentation" class="nav-link p-0 text-body-secondary">Présentation</a></li>
+                        <li class="nav-item mb-2"><a href="#activites" class="nav-link p-0 text-body-secondary">Activités</a></li>
+                        <li class="nav-item mb-2"><a href="#tarifs" class="nav-link p-0 text-body-secondary">Tarifs</a></li>
+                        <li class="nav-item mb-2"><a href="#organigramme" class="nav-link p-0 text-body-secondary">Organigramme</a></li>
+                        <li class="nav-item mb-2"><a href="#fichesdeposte" class="nav-link p-0 text-body-secondary">Fiches de poste</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5>Localisation</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a class="text-body-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/XTaGztzZpoRb5f7R8">3 Rue Gustave Courbet 70150 Marnay</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Pays : France</a></li>
 
-</footer>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5>Contacts</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">Téléphone : 07 68 72 58 23</a></li>
+                        <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary">E-mail : locavoit@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                    <h5>Si vous avez une question à nous poser :</h5>
+                    <p class="text-body-secondary">Remplissez le formulaire de contact</p>
+                    <div class="ms-2">
+                        <a href="/_partials/contact.php"><button class="btn btn-success" type="button">Cliquez ici</button></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
