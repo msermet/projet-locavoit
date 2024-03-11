@@ -177,7 +177,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/voiture.png" alt="">
+                                            <img class="w-100" src="./assets/images/fichedeposte-mariodasilva.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +202,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/voiture.png" alt="">
+                                            <img class="w-100" src="./assets/images/fichedeposte-hugorey.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -227,7 +227,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/voiture.png" alt="">
+                                            <img class="w-100" src="./assets/images/fichedeposte-sophiefon.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +252,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/voiture.png" alt="">
+                                            <img class="w-100" src="./assets/images/fichedeposte-fabricedesjean.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -277,7 +277,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/voiture.png" alt="">
+                                            <img class="w-100" src="./assets/images/fichedeposte-jeromecorneille.png" alt="">
                                         </div>
                                     </div>
                                 </div>
