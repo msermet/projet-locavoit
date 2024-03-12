@@ -103,6 +103,7 @@
                 <p class="text-secondary">Choisir le plan adapté à vos besoins</p>
             </div>
             <div class="row">
+                <!--    Carte 1-->
                 <div class="col-lg-4 col-xl-4 p-0 pt-lg-3">
                     <div class="card">
                         <div class="card-body text-center">
@@ -110,7 +111,7 @@
                             <p>Véhicule haut de gamme</p>
                             <h1 class="text-success fw-bold">70 - 300 € / jour</h1>
                             <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet. Corporis dolorum explicabo impedit ipsa ipsum magni pariatur quas, ratione voluptates. Libero minima molestiae nesciunt non quaerat quisquam repudiandae rerum vel vero.</p>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                            <button class="btn btn-primary ms-5 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                                 Voir les véhicules disponibles
                             </button>
                             <div class="translate-middle badge rounded-pill bg-danger">4
@@ -163,6 +164,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!--    Carte 2-->
                 <div class="col-lg-4 col-xl-4 p-0 my-auto">
                     <div class="card border border-success">
                         <div class="card-header text-center text-success">
@@ -173,10 +176,69 @@
                             <p>Véhicule abordable</p>
                             <h1 class="text-success fw-bold">30€ - 70€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error fugiat, ipsa magnam nisi obcaecati quaerat qui ratione reiciendis repellendus sed sit tempora ullam unde velit, veritatis vero voluptatibus voluptatum.</p>
-                            <button type="button" class="btn btn-outline-success">Achetez maintenant</button>
+                            <button class="btn btn-primary ms-5 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop1" aria-controls="staticBackdrop1">
+                                Voir les véhicules disponibles
+                            </button>
+                            <div class="translate-middle badge rounded-pill bg-danger">5
+                                <div class="spinner-border spinner-border-sm ms-1" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+
+
+                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop1" aria-labelledby="staticBackdropLabel1" style="width: 40rem">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="staticBackdropLabel1">Edition classique</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body mx-auto">
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/ford-focus.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ford Focus</h5>
+                                            <p class="card-text">Son design avant a été entièrement redessiné, notamment au niveau du capot, des pare-chocs, de la grille de calandre et du carénage. De remarquables phares avant à LED intègrent des feux antibrouillard, tandis qu’à l’arrière, les phares arborent une nouvelle silhouette unique. </p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/mini-cooper.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mini Cooper</h5>
+                                            <p class="card-text">La MINI vous offre encore plus d’espace tout en gardant son agilité et sa facilité de conduite légendaire. Son centre de gravité bas et ses dimensions compactes font merveille lorsqu'il faut se faufiler et se garer en ville. Ses nombreuses options de personnalisation permettent d’en faire une voiture unique à votre image. Un plaisir décuplé au volant et bien plus encore, tout ce que vous aimez chez MINI !</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/bmw-serie4-gran-coupe.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">BMW Série 4 Gran Coupé</h5>
+                                            <p class="card-text">Design expressif, tenue de route sportive et espace généreux au quotidien : la BMW Série 4 Gran Coupé est le coupé sportif de référence et fascine à tous points de vue. Avec son confort de conduite élevé et un espace généreux avec cinq sièges et un grand compartiment à bagages, cet élégant Gran Coupé 5 portes est le compagnon parfait pour toutes les occasions. </p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/audi-q3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Audi Q3</h5>
+                                            <p class="card-text">Une ligne de toit plongeante, une allure vigoureuse, une calandre Singleframe en nid d’abeilles et une ligne d’épaule basse... voici l’Audi Q3 Sportback, le premier SUV Coupé Compact Audi. Sous une carrosserie musclée, ses motorisations puissantes lui font gagner en dynamisme. A bord, l’expérience de conduite intègre des fonctionnalités plus intuitives que jamais et résolument « 2.0 ». Idéale pour le quotidien mais avec une touche de singularité, il est impossible pour vous de rester indifférent.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/audi-q3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Aud2i Q3</h5>
+                                            <p class="card-text">Une ligne de toit plongeante, une allure vigoureuse, une calandre Singleframe en nid d’abeilles et une ligne d’épaule basse... voici l’Audi Q3 Sportback, le premier SUV Coupé Compact Audi. Sous une carrosserie musclée, ses motorisations puissantes lui font gagner en dynamisme. A bord, l’expérience de conduite intègre des fonctionnalités plus intuitives que jamais et résolument « 2.0 ». Idéale pour le quotidien mais avec une touche de singularité, il est impossible pour vous de rester indifférent.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!--    Carte 3-->
                 <div class="col-lg-4 col-xl-4 p-0 pt-lg-3">
                     <div class="card">
                         <div class="card-body text-center">
@@ -184,7 +246,49 @@
                             <p>Véhicule ultra haut de gamme</p>
                             <h1 class="text-success fw-bold">300€ - 800€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque, cum delectus dolor et, fugit illum modi natus necessitatibus obcaecati possimus quae quam, rem repellendus similique sunt ullam voluptates voluptatum.</p>
-                            <button type="button" class="btn btn-outline-success">Achetez maintenant</button>
+                            <button class="btn btn-primary ms-5 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop2" aria-controls="staticBackdrop2">
+                                Voir les véhicules disponibles
+                            </button>
+                            <div class="translate-middle badge rounded-pill bg-danger">3
+                                <div class="spinner-border spinner-border-sm ms-1" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+
+
+                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop2" aria-labelledby="staticBackdropLabel2" style="width: 40rem">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="staticBackdropLabel2">Edition sportive</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body mx-auto">
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/lamborghini-huracan.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lamborghini Huracan</h5>
+                                            <p class="card-text">La Lamborghini Huracán est le compromis idéal entre technologie et design.
+                                                La première émotion s’éprouve au premier regard. Lignes nettes, aérodynamiques, dessinées pour fendre l’air et dompter la route. La seconde s’éprouve en la touchant. Le plus haut savoir-faire artisanal italien appliqué à la réalisation de finitions d’une qualité sans précédent. Le troisième coup de cœur arrive en démarrant et en écoutant le V10 atmosphérique, ainsi qu’en profitant de toute la technologie nécessaire pour le maîtriser. Le dernière émotion est celle que procurent le système d’éclairage full LED et la planche de bord avec écran TFT de 12,3", pour une expérience de conduite incomparable.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/ferrari-458-italia.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ferrari 458 Italia</h5>
+                                            <p class="card-text">Le succès de la Ferrari 458 Italia est imparable et continue d'obtenir une importante reconnaissance internationale. Son palmarès déjà riche compte également des titres tels que « Meilleur moteur de performance » et « Meilleur moteur d'une cylindrée supérieure à 4 litres » encore une fois pour le moteur de la berlinette Maranello. Le succès critique et public de la 458 Italia ne connaît pas de frontières.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
+                                        <img src="./assets/images/mercedes-amg-gt.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mercedes AMG GT</h5>
+                                            <p class="card-text">Il suffit de monter à bord du Nouveau Mercedes-AMG GT Coupé pour ressentir un plaisir de conduite typiquement Mercedes-AMG. Les matériaux, les couleurs et le design se combinent avec l'ADN typique de Mercedes-AMG. Du volant Performance AMG au concept de commande et d'affichage numérique avec des contenus spécifiques à AMG, en passant par les sièges Performance AMG avec des selleries raffinées en cuir Nappa, tout est pensé pour vous faire vivre une expérience à bord 100% Mercedes-AMG.</p>
+                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
