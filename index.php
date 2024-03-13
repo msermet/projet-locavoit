@@ -111,7 +111,8 @@
                             <p>Véhicule haut de gamme</p>
                             <h1 class="text-success fw-bold">70 - 300 € / jour</h1>
                             <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet. Corporis dolorum explicabo impedit ipsa ipsum magni pariatur quas, ratione voluptates. Libero minima molestiae nesciunt non quaerat quisquam repudiandae rerum vel vero.</p>
-                            <button class="btn btn-primary ms-5 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+
+                            <button type="button" class="btn btn-primary ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                                 Voir les véhicules disponibles
                             </button>
                             <div class="translate-middle badge rounded-pill bg-danger">4
@@ -120,43 +121,47 @@
                                 </div>
                             </div>
 
-
-                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" style="width: 40rem">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="staticBackdropLabel">Edition confort</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body mx-auto">
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/audi-tt-rs.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Audi TT RS Coupé</h5>
-                                            <p class="card-text">L’Audi TT RS va vous couper le souffle. Avec son bouclier aux prises d’air plus imposantes, ses ouïes latérales à l’arrière et son aileron redessiné, l’Audi TT RS semble vouloir s’affranchir des lois de l’aérodynamique. Le tout s’accompagne du mythique 5 cylindres TFSI qui saura vous ravir par ses vocalises inimitables. Laissez-vous envoûter par cette icône au sommet.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Edition confort</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/jeep-grand-cherokee.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Jeep Gran Cherokee</h5>
-                                            <p class="card-text">Grand Cherokee : l’excellence à son plus haut niveau. Luxe, raffinement et technologie d’avant-garde. A l’intérieur, les inserts en bois, le cuir Palermo de haute qualité et le ciel de toit premium créent une ambiance exclusive. Le passager avant dispose d’un écran tactile de 10’’. Confort, sécurité et sérénité sont garantis grâce à la caméra 360°, à l’assistance à la conduite semi-autonome et au système de vision nocturne qui détecte piétons, cyclistes et animaux.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/bmw-serie4-gran-coupe.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">BMW Série 4 Gran Coupé</h5>
-                                            <p class="card-text">Design expressif, tenue de route sportive et espace généreux au quotidien : la BMW Série 4 Gran Coupé est le coupé sportif de référence et fascine à tous points de vue. Avec son confort de conduite élevé et un espace généreux avec cinq sièges et un grand compartiment à bagages, cet élégant Gran Coupé 5 portes est le compagnon parfait pour toutes les occasions. </p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/audi-q3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Audi Q3</h5>
-                                            <p class="card-text">Une ligne de toit plongeante, une allure vigoureuse, une calandre Singleframe en nid d’abeilles et une ligne d’épaule basse... voici l’Audi Q3 Sportback, le premier SUV Coupé Compact Audi. Sous une carrosserie musclée, ses motorisations puissantes lui font gagner en dynamisme. A bord, l’expérience de conduite intègre des fonctionnalités plus intuitives que jamais et résolument « 2.0 ». Idéale pour le quotidien mais avec une touche de singularité, il est impossible pour vous de rester indifférent.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <div class="modal-body mx-auto">
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/audi-tt-rs.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Audi TT RS Coupé</h5>
+                                                    <p class="card-text">L’Audi TT RS va vous couper le souffle. Avec son bouclier aux prises d’air plus imposantes, ses ouïes latérales à l’arrière et son aileron redessiné, l’Audi TT RS semble vouloir s’affranchir des lois de l’aérodynamique. Le tout s’accompagne du mythique 5 cylindres TFSI qui saura vous ravir par ses vocalises inimitables. Laissez-vous envoûter par cette icône au sommet.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/jeep-grand-cherokee.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Jeep Gran Cherokee</h5>
+                                                    <p class="card-text">Grand Cherokee : l’excellence à son plus haut niveau. Luxe, raffinement et technologie d’avant-garde. A l’intérieur, les inserts en bois, le cuir Palermo de haute qualité et le ciel de toit premium créent une ambiance exclusive. Le passager avant dispose d’un écran tactile de 10’’. Confort, sécurité et sérénité sont garantis grâce à la caméra 360°, à l’assistance à la conduite semi-autonome et au système de vision nocturne qui détecte piétons, cyclistes et animaux.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/bmw-serie4-gran-coupe.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">BMW Série 4 Gran Coupé</h5>
+                                                    <p class="card-text">Design expressif, tenue de route sportive et espace généreux au quotidien : la BMW Série 4 Gran Coupé est le coupé sportif de référence et fascine à tous points de vue. Avec son confort de conduite élevé et un espace généreux avec cinq sièges et un grand compartiment à bagages, cet élégant Gran Coupé 5 portes est le compagnon parfait pour toutes les occasions. </p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/audi-q3.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Audi Q3</h5>
+                                                    <p class="card-text">Une ligne de toit plongeante, une allure vigoureuse, une calandre Singleframe en nid d’abeilles et une ligne d’épaule basse... voici l’Audi Q3 Sportback, le premier SUV Coupé Compact Audi. Sous une carrosserie musclée, ses motorisations puissantes lui font gagner en dynamisme. A bord, l’expérience de conduite intègre des fonctionnalités plus intuitives que jamais et résolument « 2.0 ». Idéale pour le quotidien mais avec une touche de singularité, il est impossible pour vous de rester indifférent.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -176,7 +181,7 @@
                             <p>Véhicule abordable</p>
                             <h1 class="text-success fw-bold">30€ - 70€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error fugiat, ipsa magnam nisi obcaecati quaerat qui ratione reiciendis repellendus sed sit tempora ullam unde velit, veritatis vero voluptatibus voluptatum.</p>
-                            <button class="btn btn-primary ms-5 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop1" aria-controls="staticBackdrop1">
+                            <button type="button" class="btn btn-primary ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 Voir les véhicules disponibles
                             </button>
                             <div class="translate-middle badge rounded-pill bg-danger">5
@@ -185,51 +190,56 @@
                                 </div>
                             </div>
 
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Edition classique</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body mx-auto">
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/ford-focus.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ford Focus</h5>
+                                                    <p class="card-text">Son design avant a été entièrement redessiné, notamment au niveau du capot, des pare-chocs, de la grille de calandre et du carénage. De remarquables phares avant à LED intègrent des feux antibrouillard, tandis qu’à l’arrière, les phares arborent une nouvelle silhouette unique. </p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/mini-cooper.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Mini Cooper</h5>
+                                                    <p class="card-text">La MINI vous offre encore plus d’espace tout en gardant son agilité et sa facilité de conduite légendaire. Son centre de gravité bas et ses dimensions compactes font merveille lorsqu'il faut se faufiler et se garer en ville. Ses nombreuses options de personnalisation permettent d’en faire une voiture unique à votre image. Un plaisir décuplé au volant et bien plus encore, tout ce que vous aimez chez MINI !</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
 
-                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop1" aria-labelledby="staticBackdropLabel1" style="width: 40rem">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="staticBackdropLabel1">Edition classique</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body mx-auto">
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/ford-focus.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Ford Focus</h5>
-                                            <p class="card-text">Son design avant a été entièrement redessiné, notamment au niveau du capot, des pare-chocs, de la grille de calandre et du carénage. De remarquables phares avant à LED intègrent des feux antibrouillard, tandis qu’à l’arrière, les phares arborent une nouvelle silhouette unique. </p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/mini-cooper.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Mini Cooper</h5>
-                                            <p class="card-text">La MINI vous offre encore plus d’espace tout en gardant son agilité et sa facilité de conduite légendaire. Son centre de gravité bas et ses dimensions compactes font merveille lorsqu'il faut se faufiler et se garer en ville. Ses nombreuses options de personnalisation permettent d’en faire une voiture unique à votre image. Un plaisir décuplé au volant et bien plus encore, tout ce que vous aimez chez MINI !</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/bmw-serie4-gran-coupe.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">BMW Série 4 Gran Coupé</h5>
-                                            <p class="card-text">Design expressif, tenue de route sportive et espace généreux au quotidien : la BMW Série 4 Gran Coupé est le coupé sportif de référence et fascine à tous points de vue. Avec son confort de conduite élevé et un espace généreux avec cinq sièges et un grand compartiment à bagages, cet élégant Gran Coupé 5 portes est le compagnon parfait pour toutes les occasions. </p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/audi-q3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Audi Q3</h5>
-                                            <p class="card-text">Une ligne de toit plongeante, une allure vigoureuse, une calandre Singleframe en nid d’abeilles et une ligne d’épaule basse... voici l’Audi Q3 Sportback, le premier SUV Coupé Compact Audi. Sous une carrosserie musclée, ses motorisations puissantes lui font gagner en dynamisme. A bord, l’expérience de conduite intègre des fonctionnalités plus intuitives que jamais et résolument « 2.0 ». Idéale pour le quotidien mais avec une touche de singularité, il est impossible pour vous de rester indifférent.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/audi-q3.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Aud2i Q3</h5>
-                                            <p class="card-text">Une ligne de toit plongeante, une allure vigoureuse, une calandre Singleframe en nid d’abeilles et une ligne d’épaule basse... voici l’Audi Q3 Sportback, le premier SUV Coupé Compact Audi. Sous une carrosserie musclée, ses motorisations puissantes lui font gagner en dynamisme. A bord, l’expérience de conduite intègre des fonctionnalités plus intuitives que jamais et résolument « 2.0 ». Idéale pour le quotidien mais avec une touche de singularité, il est impossible pour vous de rester indifférent.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/hyundai-santa-fe.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Hyundai Santa Fe</h5>
+                                                    <p class="card-text">Animé d’un tout nouveau moteur hybride encore plus sobre, le SUV phare de Hyundai offre plus d’espace et de style. Découvrez un design plus audacieux et plus distinctif. Le Hyundai SANTA FE Hybrid associe un moteur turbo essence à injection directe et un moteur électrique à batterie Profitez d’une technologie de pointe.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/range-rover-evoque.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Range Rover Evoque</h5>
+                                                    <p class="card-text">À LA POINTE DE L’INNOVATION : Le luxe est une seconde nature du Range Rover Evoque, qui conjugue harmonieusement ses dernières technologies et fonctionnalités d’infodivertissement, l’élégance de son design et ses innovations.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/nissan-qashqai.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Nissan Qashqai</h5>
+                                                    <p class="card-text">Le Nissan Qashqai se réinvente avec la motorisation hybride Mild Hybrid et la motorisation hybride unique e-POWER. Il ne passe pas inaperçu avec ses jantes alliage 20’’, ses feux LED élégants et ses lignes audacieuses.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -246,7 +256,7 @@
                             <p>Véhicule ultra haut de gamme</p>
                             <h1 class="text-success fw-bold">300€ - 800€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque, cum delectus dolor et, fugit illum modi natus necessitatibus obcaecati possimus quae quam, rem repellendus similique sunt ullam voluptates voluptatum.</p>
-                            <button class="btn btn-primary ms-5 my-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop2" aria-controls="staticBackdrop2">
+                            <button type="button" class="btn btn-primary ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                                 Voir les véhicules disponibles
                             </button>
                             <div class="translate-middle badge rounded-pill bg-danger">3
@@ -255,36 +265,40 @@
                                 </div>
                             </div>
 
-
-                            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop2" aria-labelledby="staticBackdropLabel2" style="width: 40rem">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="staticBackdropLabel2">Edition sportive</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body mx-auto">
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/lamborghini-huracan.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Lamborghini Huracan</h5>
-                                            <p class="card-text">La Lamborghini Huracán est le compromis idéal entre technologie et design.
-                                                La première émotion s’éprouve au premier regard. Lignes nettes, aérodynamiques, dessinées pour fendre l’air et dompter la route. La seconde s’éprouve en la touchant. Le plus haut savoir-faire artisanal italien appliqué à la réalisation de finitions d’une qualité sans précédent. Le troisième coup de cœur arrive en démarrant et en écoutant le V10 atmosphérique, ainsi qu’en profitant de toute la technologie nécessaire pour le maîtriser. Le dernière émotion est celle que procurent le système d’éclairage full LED et la planche de bord avec écran TFT de 12,3", pour une expérience de conduite incomparable.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Edition sportive</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/ferrari-458-italia.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Ferrari 458 Italia</h5>
-                                            <p class="card-text">Le succès de la Ferrari 458 Italia est imparable et continue d'obtenir une importante reconnaissance internationale. Son palmarès déjà riche compte également des titres tels que « Meilleur moteur de performance » et « Meilleur moteur d'une cylindrée supérieure à 4 litres » encore une fois pour le moteur de la berlinette Maranello. Le succès critique et public de la 458 Italia ne connaît pas de frontières.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-5 border-3 border-dark" style="width: 35rem;">
-                                        <img src="./assets/images/mercedes-amg-gt.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Mercedes AMG GT</h5>
-                                            <p class="card-text">Il suffit de monter à bord du Nouveau Mercedes-AMG GT Coupé pour ressentir un plaisir de conduite typiquement Mercedes-AMG. Les matériaux, les couleurs et le design se combinent avec l'ADN typique de Mercedes-AMG. Du volant Performance AMG au concept de commande et d'affichage numérique avec des contenus spécifiques à AMG, en passant par les sièges Performance AMG avec des selleries raffinées en cuir Nappa, tout est pensé pour vous faire vivre une expérience à bord 100% Mercedes-AMG.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <div class="modal-body mx-auto">
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/lamborghini-huracan.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Lamborghini Huracan</h5>
+                                                    <p class="card-text">La Lamborghini Huracán est le compromis idéal entre technologie et design.
+                                                        La première émotion s’éprouve au premier regard. Lignes nettes, aérodynamiques, dessinées pour fendre l’air et dompter la route. La seconde s’éprouve en la touchant. Le plus haut savoir-faire artisanal italien appliqué à la réalisation de finitions d’une qualité sans précédent. Le troisième coup de cœur arrive en démarrant et en écoutant le V10 atmosphérique, ainsi qu’en profitant de toute la technologie nécessaire pour le maîtriser. Le dernière émotion est celle que procurent le système d’éclairage full LED et la planche de bord avec écran TFT de 12,3", pour une expérience de conduite incomparable.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/ferrari-458-italia.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Ferrari 458 Italia</h5>
+                                                    <p class="card-text">Le succès de la Ferrari 458 Italia est imparable et continue d'obtenir une importante reconnaissance internationale. Son palmarès déjà riche compte également des titres tels que « Meilleur moteur de performance » et « Meilleur moteur d'une cylindrée supérieure à 4 litres » encore une fois pour le moteur de la berlinette Maranello. Le succès critique et public de la 458 Italia ne connaît pas de frontières.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/mercedes-amg-gt.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Mercedes AMG GT</h5>
+                                                    <p class="card-text">Il suffit de monter à bord du Nouveau Mercedes-AMG GT Coupé pour ressentir un plaisir de conduite typiquement Mercedes-AMG. Les matériaux, les couleurs et le design se combinent avec l'ADN typique de Mercedes-AMG. Du volant Performance AMG au concept de commande et d'affichage numérique avec des contenus spécifiques à AMG, en passant par les sièges Performance AMG avec des selleries raffinées en cuir Nappa, tout est pensé pour vous faire vivre une expérience à bord 100% Mercedes-AMG.</p>
+                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -316,13 +330,13 @@
                         <img src="./assets/images/mariodasilva.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                                 Fiche de poste
                             </button>
 
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -341,13 +355,13 @@
                         <img src="./assets/images/hugorey.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal5">
                                 Fiche de poste
                             </button>
 
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -366,13 +380,13 @@
                         <img src="./assets/images/sophiefon.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal6">
                                 Fiche de poste
                             </button>
 
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -391,13 +405,13 @@
                         <img src="./assets/images/fabricedesjean.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal7">
                                 Fiche de poste
                             </button>
 
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -416,13 +430,13 @@
                         <img src="./assets/images/jeromecorneille.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                            <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal8">
                                 Fiche de poste
                             </button>
 
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -455,7 +469,7 @@
     <div class="bg-secondary">
         <footer id="pied-de-page" class="py-5 container">
             <div class="row">
-                <div class="col-6 col-md-2">
+                <div class="col-md-2">
                     <h5>Redirection</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#presentation" class="nav-link p-0 text-body-secondary"><i class="bi bi-arrow-right-circle-fill me-2"></i>Présentation</a></li>
@@ -465,7 +479,7 @@
                         <li class="nav-item mb-2"><a href="#fichesdeposte" class="nav-link p-0 text-body-secondary"><i class="bi bi-arrow-right-circle-fill me-2"></i>Fiches de poste</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-2">
+                <div class="col-md-2">
                     <h5>Localisation</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a class="text-body-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/XTaGztzZpoRb5f7R8"><i class="bi bi-geo-fill me-2"></i>3 Rue Gustave Courbet 70150 Marnay</a></li>
@@ -473,7 +487,7 @@
 
                     </ul>
                 </div>
-                <div class="col-6 col-md-2">
+                <div class="col-md-2">
                     <h5>Contacts</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"><i class="bi bi-telephone-outbound-fill me-2"></i>07 68 72 58 23</a></li>
