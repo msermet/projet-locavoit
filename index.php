@@ -5,13 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.flatly.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         section {
             padding: 60px 0;
         }
+
     </style>
     <title>LocaVoit</title>
     <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
@@ -34,7 +35,7 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <img class="d-md-block d-none mx-auto" src="./assets/images/logo-locavoit.png" alt="Logo Spotify" />
+                    <img id="img-presentation" class="d-md-block d-none mx-auto" src="./assets/images/logo-locavoit.png" alt="Logo Spotify" />
                 </div>
             </div>
         </div>
@@ -45,47 +46,47 @@
         <div class="container">
             <div class="text-center text-black">
                 <h1>Nos activités</h1>
-                <p>Vous permettant de louer un véhicule chez nous en toute sérénité !</p>
+                <p class="text-secondary">Vous permettant de louer un véhicule chez nous en toute sérénité !</p>
             </div>
             <div class="row pt-5 align-items-center">
                 <div class="col-lg-6 col-xl-6 text-center">
-                    <img class="d-lg-block my-auto mx-auto rounded-5 img-fluid mb-4" src="./assets/images/206+.png" alt="206 +" />
+                    <img class="d-lg-block my-auto mx-auto rounded-5 img-fluid mb-4 shadow" src="./assets/images/206+.png" alt="206 +" />
                 </div>
                 <div class="col-lg-6 col-xl-6">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item shadow">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Gérer l’entretien et le rachat de véhicules
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eaque ex illo iste, iusto laboriosam laudantium maxime natus nobis, non omnis porro praesentium qui sapiente similique suscipit ut vel vero!
+                                    Notre entreprise se spécialise dans la location de voitures et met l'accent sur la gestion efficace de l'entretien et du rachat de véhicules. Nous assurons un entretien rigoureux de notre flotte pour garantir la sécurité et la satisfaction de nos clients, tout en recherchant activement les meilleures opportunités pour renouveler notre parc automobile avec des modèles modernes et fiables.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item shadow">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Gérer le stock de véhicule
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laborum non provident recusandae vitae voluptas. Adipisci animi assumenda beatae cum cumque distinctio dolore ea earum eius iure, nulla sit voluptatum!
+                                    En tant qu'entreprise de location de voitures, notre deuxième activité consiste à gérer efficacement notre stock de véhicules. Nous veillons à maintenir un inventaire bien organisé et diversifié, en nous assurant d'avoir toujours une sélection de véhicules disponibles pour répondre aux besoins de nos clients. Notre priorité est de garantir la disponibilité et la variété des voitures, afin d'offrir à nos clients un choix optimal lors de la réservation de leur véhicule idéal.
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item shadow">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
                                     Gérer la satisfaction client
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laborum non provident recusandae vitae voluptas. Adipisci animi assumenda beatae cum cumque distinctio dolore ea earum eius iure, nulla sit voluptatum!
+                                    Une autre facette essentielle de notre entreprise est la gestion proactive de la satisfaction client. Nous mettons tout en œuvre pour offrir une expérience de location de voitures exceptionnelle, en restant à l'écoute des besoins de nos clients, en traitant rapidement leurs demandes et en garantissant leur satisfaction à chaque étape de leur parcours avec nous. Notre engagement envers la qualité du service client se reflète dans chaque interaction, visant à dépasser les attentes et à fidéliser notre clientèle.
                                 </div>
                             </div>
                         </div>
@@ -100,22 +101,22 @@
         <div class="container">
             <div class="text-center text-black">
                 <h1>Tarifs de location</h1>
-                <p class="text-secondary">Choisir le plan adapté à vos besoins</p>
+                <p class="text-secondary pb-4">Choisir le plan adapté à vos besoins</p>
             </div>
             <div class="row">
                 <!--    Carte 1-->
                 <div class="col-lg-4 col-xl-4 p-0 pt-lg-3">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition confort</h5>
                             <p>Véhicule haut de gamme</p>
-                            <h1 class="text-success fw-bold">70 - 300 € / jour</h1>
-                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet. Corporis dolorum explicabo impedit ipsa ipsum magni pariatur quas, ratione voluptates. Libero minima molestiae nesciunt non quaerat quisquam repudiandae rerum vel vero.</p>
+                            <h1 class="text-success fw-bold">100€ - 300 € / jour</h1>
+                            <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Confort' pour des véhicules haut de gamme et confortables. Profitez d'une conduite élégante et sans souci avec nos modèles spacieux, équipés des dernières technologies. Parfait pour des déplacements professionnels ou des voyages en famille, notre sélection garantit une expérience de conduite inégalée.</p>
 
-                            <button type="button" class="btn btn-primary ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                                 Voir les véhicules disponibles
                             </button>
-                            <div class="translate-middle badge rounded-pill bg-danger">4
+                            <div class="translate-middle badge rounded-pill bg-success">4
                                 <div class="spinner-border spinner-border-sm ms-1" role="status">
                                     <span class="visually-hidden">Loading...</span>
                                 </div>
@@ -135,7 +136,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Audi TT RS Coupé</h5>
                                                     <p class="card-text">L’Audi TT RS va vous couper le souffle. Avec son bouclier aux prises d’air plus imposantes, ses ouïes latérales à l’arrière et son aileron redessiné, l’Audi TT RS semble vouloir s’affranchir des lois de l’aérodynamique. Le tout s’accompagne du mythique 5 cylindres TFSI qui saura vous ravir par ses vocalises inimitables. Laissez-vous envoûter par cette icône au sommet.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -143,7 +144,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Jeep Gran Cherokee</h5>
                                                     <p class="card-text">Grand Cherokee : l’excellence à son plus haut niveau. Luxe, raffinement et technologie d’avant-garde. A l’intérieur, les inserts en bois, le cuir Palermo de haute qualité et le ciel de toit premium créent une ambiance exclusive. Le passager avant dispose d’un écran tactile de 10’’. Confort, sécurité et sérénité sont garantis grâce à la caméra 360°, à l’assistance à la conduite semi-autonome et au système de vision nocturne qui détecte piétons, cyclistes et animaux.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -151,7 +152,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">BMW Série 4 Gran Coupé</h5>
                                                     <p class="card-text">Design expressif, tenue de route sportive et espace généreux au quotidien : la BMW Série 4 Gran Coupé est le coupé sportif de référence et fascine à tous points de vue. Avec son confort de conduite élevé et un espace généreux avec cinq sièges et un grand compartiment à bagages, cet élégant Gran Coupé 5 portes est le compagnon parfait pour toutes les occasions. </p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -159,7 +160,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Audi Q3</h5>
                                                     <p class="card-text">Une ligne de toit plongeante, une allure vigoureuse, une calandre Singleframe en nid d’abeilles et une ligne d’épaule basse... voici l’Audi Q3 Sportback, le premier SUV Coupé Compact Audi. Sous une carrosserie musclée, ses motorisations puissantes lui font gagner en dynamisme. A bord, l’expérience de conduite intègre des fonctionnalités plus intuitives que jamais et résolument « 2.0 ». Idéale pour le quotidien mais avec une touche de singularité, il est impossible pour vous de rester indifférent.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,19 +173,19 @@
 
                 <!--    Carte 2-->
                 <div class="col-lg-4 col-xl-4 p-0 my-auto">
-                    <div class="card border border-success">
-                        <div class="card-header text-center text-success">
+                    <div class="card border border-danger border-2 shadow">
+                        <div class="card-header text-center fw-bold text-danger">
                             Le plus populaire
                         </div>
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition classique</h5>
                             <p>Véhicule abordable</p>
                             <h1 class="text-success fw-bold">30€ - 70€ / jour</h1>
-                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error fugiat, ipsa magnam nisi obcaecati quaerat qui ratione reiciendis repellendus sed sit tempora ullam unde velit, veritatis vero voluptatibus voluptatum.</p>
-                            <button type="button" class="btn btn-primary ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Classique' pour des véhicules standards à des prix abordables. Idéale pour ceux qui recherchent une option fiable et économique, cette sélection offre des modèles polyvalents pour répondre à vos besoins quotidiens de déplacement. Profitez d'une conduite confortable et pratique sans compromis sur la qualité, et explorez librement votre destination avec notre offre accessible.</p>
+                            <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 Voir les véhicules disponibles
                             </button>
-                            <div class="translate-middle badge rounded-pill bg-danger">5
+                            <div class="translate-middle badge rounded-pill bg-success">5
                                 <div class="spinner-border spinner-border-sm ms-1" role="status">
                                     <span class="visually-hidden">Loading...</span>
                                 </div>
@@ -204,7 +205,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Ford Focus</h5>
                                                     <p class="card-text">Son design avant a été entièrement redessiné, notamment au niveau du capot, des pare-chocs, de la grille de calandre et du carénage. De remarquables phares avant à LED intègrent des feux antibrouillard, tandis qu’à l’arrière, les phares arborent une nouvelle silhouette unique. </p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -212,7 +213,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Mini Cooper</h5>
                                                     <p class="card-text">La MINI vous offre encore plus d’espace tout en gardant son agilité et sa facilité de conduite légendaire. Son centre de gravité bas et ses dimensions compactes font merveille lorsqu'il faut se faufiler et se garer en ville. Ses nombreuses options de personnalisation permettent d’en faire une voiture unique à votre image. Un plaisir décuplé au volant et bien plus encore, tout ce que vous aimez chez MINI !</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
 
                                                 </div>
                                             </div>
@@ -221,7 +222,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Hyundai Santa Fe</h5>
                                                     <p class="card-text">Animé d’un tout nouveau moteur hybride encore plus sobre, le SUV phare de Hyundai offre plus d’espace et de style. Découvrez un design plus audacieux et plus distinctif. Le Hyundai SANTA FE Hybrid associe un moteur turbo essence à injection directe et un moteur électrique à batterie Profitez d’une technologie de pointe.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -229,7 +230,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Range Rover Evoque</h5>
                                                     <p class="card-text">À LA POINTE DE L’INNOVATION : Le luxe est une seconde nature du Range Rover Evoque, qui conjugue harmonieusement ses dernières technologies et fonctionnalités d’infodivertissement, l’élégance de son design et ses innovations.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -237,7 +238,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Nissan Qashqai</h5>
                                                     <p class="card-text">Le Nissan Qashqai se réinvente avec la motorisation hybride Mild Hybrid et la motorisation hybride unique e-POWER. Il ne passe pas inaperçu avec ses jantes alliage 20’’, ses feux LED élégants et ses lignes audacieuses.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -250,16 +251,16 @@
 
                 <!--    Carte 3-->
                 <div class="col-lg-4 col-xl-4 p-0 pt-lg-3">
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition sportive</h5>
                             <p>Véhicule ultra haut de gamme</p>
                             <h1 class="text-success fw-bold">300€ - 800€ / jour</h1>
-                            <p class="card-text d-lg-block d-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque, cum delectus dolor et, fugit illum modi natus necessitatibus obcaecati possimus quae quam, rem repellendus similique sunt ullam voluptates voluptatum.</p>
-                            <button type="button" class="btn btn-primary ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Sportive' pour des véhicules ultra haut de gamme aux performances impressionnantes. Conçue pour les passionnés de conduite, cette sélection offre une expérience dynamique et exaltante. Avec des modèles de pointe dotés de technologies avancées, notre gamme sportive vous promet des sensations fortes sur la route.</p>
+                            <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                                 Voir les véhicules disponibles
                             </button>
-                            <div class="translate-middle badge rounded-pill bg-danger">3
+                            <div class="translate-middle badge rounded-pill bg-success">3
                                 <div class="spinner-border spinner-border-sm ms-1" role="status">
                                     <span class="visually-hidden">Loading...</span>
                                 </div>
@@ -280,7 +281,7 @@
                                                     <h5 class="card-title">Lamborghini Huracan</h5>
                                                     <p class="card-text">La Lamborghini Huracán est le compromis idéal entre technologie et design.
                                                         La première émotion s’éprouve au premier regard. Lignes nettes, aérodynamiques, dessinées pour fendre l’air et dompter la route. La seconde s’éprouve en la touchant. Le plus haut savoir-faire artisanal italien appliqué à la réalisation de finitions d’une qualité sans précédent. Le troisième coup de cœur arrive en démarrant et en écoutant le V10 atmosphérique, ainsi qu’en profitant de toute la technologie nécessaire pour le maîtriser. Le dernière émotion est celle que procurent le système d’éclairage full LED et la planche de bord avec écran TFT de 12,3", pour une expérience de conduite incomparable.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -288,7 +289,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Ferrari 458 Italia</h5>
                                                     <p class="card-text">Le succès de la Ferrari 458 Italia est imparable et continue d'obtenir une importante reconnaissance internationale. Son palmarès déjà riche compte également des titres tels que « Meilleur moteur de performance » et « Meilleur moteur d'une cylindrée supérieure à 4 litres » encore une fois pour le moteur de la berlinette Maranello. Le succès critique et public de la 458 Italia ne connaît pas de frontières.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
@@ -296,7 +297,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">Mercedes AMG GT</h5>
                                                     <p class="card-text">Il suffit de monter à bord du Nouveau Mercedes-AMG GT Coupé pour ressentir un plaisir de conduite typiquement Mercedes-AMG. Les matériaux, les couleurs et le design se combinent avec l'ADN typique de Mercedes-AMG. Du volant Performance AMG au concept de commande et d'affichage numérique avec des contenus spécifiques à AMG, en passant par les sièges Performance AMG avec des selleries raffinées en cuir Nappa, tout est pensé pour vous faire vivre une expérience à bord 100% Mercedes-AMG.</p>
-                                                    <a href="./_partials/reservation.php" class="btn btn-primary">Go somewhere</a>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -498,7 +499,7 @@
                     <h5>Une question ?<i class="bi bi-person-raised-hand ms-2"></i></h5>
                     <p class="text-body-secondary">Remplissez le formulaire de contact :</p>
                     <div class="ms-2">
-                        <a href="/_partials/contact.php"><button class="btn btn-success" type="button">Cliquez ici</button></a>
+                        <a href="/contact.php"><button class="btn btn-success" type="button">Cliquez ici</button></a>
                     </div>
                 </div>
             </div>

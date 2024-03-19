@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.flatly.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -56,10 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body class="bg-secondary">
 <!--Insertion d'un menu-->
-<?php include_once '../_partials/menu.php' ?>
+<?php include_once './_partials/menu.php' ?>
 <div class="container">
     <h1 class="border-bottom border-3 pt-4">Contactez nous !</h1>
-    <div class="w-50 mx-auto shadow my-5 p-4 bg-dark rounded-5 text-white">
+    <div class="w-50 mx-auto shadow my-5 p-4 bg-primary rounded-5 text-white">
         <form action="" method="post" novalidate>
             <div class="mb-3">
                 <label for="prenom" class="form-label fw-bold">Prénom*</label>
@@ -93,10 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <?php endif; ?>
                 <div id="emailHelp" class="form-text text-secondary">Ne partagez jamais votre adresse email</div>
             </div>
-            <label for="question" class="form-label fw-bold">Une question ?</label>
-            <div class="input-group pt-2 pb-4">
-                <textarea class="form-control" aria-label="With textarea" placeholder="Votre question..."></textarea>
-            </div>
+0
             <div class="text-center">
                 <button type="submit" class="btn btn-success fw-bold">Valider</button>
             </div>
@@ -106,6 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </div>
 
 
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
