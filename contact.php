@@ -54,11 +54,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Formulaire</title>
 </head>
-<body class="bg-secondary">
+<body class="bg-light">
 <!--Insertion d'un menu-->
 <?php include_once './_partials/menu.php' ?>
 <div class="container">
-    <h1 class="border-bottom border-3 pt-4">Contactez nous !</h1>
+    <h1 class="border-bottom border-3 pt-4 border-success">Contactez nous !</h1>
     <div class="w-50 mx-auto shadow my-5 p-4 bg-primary rounded-5 text-white">
         <form action="" method="post" novalidate>
             <div class="mb-3">
@@ -93,7 +93,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <?php endif; ?>
                 <div id="emailHelp" class="form-text text-secondary">Ne partagez jamais votre adresse email</div>
             </div>
-0
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Votre question : </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="exemple : Comment réserver un véhicule pour une durée de 2 jours ?"></textarea>
+            </div>
             <div class="text-center">
                 <button type="submit" class="btn btn-success fw-bold">Valider</button>
             </div>
@@ -101,6 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </form>
     </div>
 </div>
+<?php include_once '_partials/footer.php' ?>
 
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>

@@ -17,25 +17,28 @@
     <title>LocaVoit</title>
     <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
 </head>
-<body>
+<body id="style-15">
+<div class="scrollbar" id="style-15">
+    <div class="force-overflow"></div>
+</div>
 <main>
     <!--Insertion d'un menu-->
     <?php include_once '_partials/menu.php' ?>
     <!--    Présentation-->
-    <section id="presentation" class="bg-secondary">
+    <section id="presentation" class="bg-dark">
         <div class="container">
             <div class="row text-center text-black">
-                <div class="col-md-7 col-xl-7 text-md-start pt-5">
+                <div class="col-md-7 col-xl-7 text-md-start pt-5 shadow rounded-5 bg-secondary p-5">
                     <h1>LocaVoit - Location de véhicules</h1>
                     <h2 class="pt-3">La liberté de rouler pas cher</h2>
                     <p class="pt-3 fs-6">Louez des véhicules de gammes en France et dans le monde entier. Notre flotte compte plus de 200 voitures de location, dont les modèles proviennent des meilleurs constructeurs automobiles au monde, notamment les favoris allemands tels que BMW, Mercedes, Audi ainsi que bien d'autres encore.
                     </p>
-                    <div class="pt-3">
-                        <a href="#pied-de-page"><button class="btn btn-success fs-6" type="button">Nos coordonnées</button></a>
+                    <div class="pt-3 text-center">
+                        <a href="#pied-de-page"><button class="btn btn-success fs-6 shadow border-2 border-dark text-black" type="button">Nos coordonnées</button></a>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <img id="img-presentation" class="d-md-block d-none mx-auto" src="./assets/images/logo-locavoit.png" alt="Logo Spotify" />
+                    <img id="img-presentation" class="d-md-block d-none mx-auto pt-5" src="./assets/images/logo-locavoit.png" alt="Logo Spotify" />
                 </div>
             </div>
         </div>
@@ -46,7 +49,7 @@
         <div class="container">
             <div class="text-center text-black">
                 <h1>Nos activités</h1>
-                <p class="text-secondary">Vous permettant de louer un véhicule chez nous en toute sérénité !</p>
+                <p class="text-center fs-5 fw-lighter">Vous permettant de louer un véhicule chez nous en toute sérénité !</p>
             </div>
             <div class="row pt-5 align-items-center">
                 <div class="col-lg-6 col-xl-6 text-center">
@@ -101,7 +104,7 @@
         <div class="container">
             <div class="text-center text-black">
                 <h1>Tarifs de location</h1>
-                <p class="text-secondary pb-4">Choisir le plan adapté à vos besoins</p>
+                <p class="text-center fs-5 fw-lighter pb-4">Choisir le plan adapté à vos besoins</p>
             </div>
             <div class="row">
                 <!--    Carte 1-->
@@ -132,14 +135,6 @@
                                         </div>
                                         <div class="modal-body mx-auto">
                                             <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
-                                                <img src="./assets/images/audi-tt-rs.jpg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Audi TT RS Coupé</h5>
-                                                    <p class="card-text">L’Audi TT RS va vous couper le souffle. Avec son bouclier aux prises d’air plus imposantes, ses ouïes latérales à l’arrière et son aileron redessiné, l’Audi TT RS semble vouloir s’affranchir des lois de l’aérodynamique. Le tout s’accompagne du mythique 5 cylindres TFSI qui saura vous ravir par ses vocalises inimitables. Laissez-vous envoûter par cette icône au sommet.</p>
-                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
-                                                </div>
-                                            </div>
-                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
                                                 <img src="./assets/images/jeep-grand-cherokee.jpg" class="card-img-top" alt="...">
                                                 <div class="card-body">
                                                     <h5 class="card-title">Jeep Gran Cherokee</h5>
@@ -163,6 +158,14 @@
                                                     <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
                                                 </div>
                                             </div>
+                                            <div class="card mb-5 border-3 border-dark" style="width: 23rem;">
+                                                <img src="./assets/images/audi-tt-rs.jpg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Audi TT RS Coupé</h5>
+                                                    <p class="card-text">L’Audi TT RS va vous couper le souffle. Avec son bouclier aux prises d’air plus imposantes, ses ouïes latérales à l’arrière et son aileron redessiné, l’Audi TT RS semble vouloir s’affranchir des lois de l’aérodynamique. Le tout s’accompagne du mythique 5 cylindres TFSI qui saura vous ravir par ses vocalises inimitables. Laissez-vous envoûter par cette icône au sommet.</p>
+                                                    <a href="reservation.php" class="btn btn-success fw-bold text-black">Réserver le véhicule</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -175,7 +178,7 @@
                 <div class="col-lg-4 col-xl-4 p-0 my-auto">
                     <div class="card border border-danger border-2 shadow">
                         <div class="card-header text-center fw-bold text-danger">
-                            Le plus populaire
+                            Laissez vous tenter <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#0A0A30" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
                         </div>
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition classique</h5>
@@ -467,44 +470,8 @@
     <div class="border-top border-3"></div>
     <!--    Contact-->
 </main>
-    <div class="bg-secondary">
-        <footer id="pied-de-page" class="py-5 container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h5>Redirection</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#presentation" class="nav-link p-0 text-body-secondary"><i class="bi bi-arrow-right-circle-fill me-2"></i>Présentation</a></li>
-                        <li class="nav-item mb-2"><a href="#activites" class="nav-link p-0 text-body-secondary"><i class="bi bi-arrow-right-circle-fill me-2"></i>Activités</a></li>
-                        <li class="nav-item mb-2"><a href="#tarifs" class="nav-link p-0 text-body-secondary"><i class="bi bi-arrow-right-circle-fill me-2"></i>Tarifs</a></li>
-                        <li class="nav-item mb-2"><a href="#organigramme" class="nav-link p-0 text-body-secondary"><i class="bi bi-arrow-right-circle-fill me-2"></i>Organigramme</a></li>
-                        <li class="nav-item mb-2"><a href="#fichesdeposte" class="nav-link p-0 text-body-secondary"><i class="bi bi-arrow-right-circle-fill me-2"></i>Fiches de poste</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5>Localisation</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a class="text-body-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://maps.app.goo.gl/XTaGztzZpoRb5f7R8"><i class="bi bi-geo-fill me-2"></i>3 Rue Gustave Courbet 70150 Marnay</a></li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"><i class="bi bi-geo-alt-fill me-2"></i>France</a></li>
+<?php include_once '_partials/footer.php' ?>
 
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h5>Contacts</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"><i class="bi bi-telephone-outbound-fill me-2"></i>07 68 72 58 23</a></li>
-                        <li class="nav-item mb-2"><a class="nav-link p-0 text-body-secondary"><i class="bi bi-envelope-at-fill me-2"></i>locavoit@gmail.com</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-5 offset-md-1">
-                    <h5>Une question ?<i class="bi bi-person-raised-hand ms-2"></i></h5>
-                    <p class="text-body-secondary">Remplissez le formulaire de contact :</p>
-                    <div class="ms-2">
-                        <a href="/contact.php"><button class="btn btn-success" type="button">Cliquez ici</button></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

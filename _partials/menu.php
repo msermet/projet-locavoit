@@ -1,6 +1,6 @@
 <!--    Barre de navigation-->
 <header>
-    <nav class="navbar navbar-expand-lg bg-primary shadow" style="width: 100%">
+    <nav class="navbar navbar-expand-lg bg-primary shadow border-top border-bottom border-success border-2" style="width: 100%">
         <div class="container-fluid">
             <a class="navbar-brand fs-3 fw-bold text-light" href="../index.php"><img height="50" src="../assets/images/logo-locavoit.png" alt="Logo Spotify"/><span class="ms-2">LocaVoit</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

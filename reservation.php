@@ -68,11 +68,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Réservation</title>
 </head>
-<body class="bg-secondary">
+<body class="bg-light">
 <!--Insertion d'un menu-->
 <?php include_once './_partials/menu.php' ?>
 <div class="container">
-    <h1 class="border-bottom border-3 pt-4">Réservation du véhicule</h1>
+    <h1 class="border-bottom border-3 pt-4 border-success">Réservation du véhicule</h1>
     <div class="w-50 mx-auto shadow my-5 p-4 bg-primary rounded-5 text-white">
         <form action="" method="post" novalidate>
             <div class="mb-3">
@@ -137,7 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </form>
     </div>
 </div>
-
+<?php include_once '_partials/footer.php' ?>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
