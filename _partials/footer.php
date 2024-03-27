@@ -4,7 +4,7 @@
             <div class="col-md-2">
                 <h5>Redirection</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#presentation" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <li class="nav-item mb-2"><a href="/index.php#presentation" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <style>
                                     .slide-6 {
                                         animation: slide-6 1s infinite alternate both cubic-bezier(1, -0.01, 0, 0.98);
@@ -19,7 +19,7 @@
                                 <path class="slide-6" fill="#0A0A30" fill-rule="evenodd" d="M13.155 16.834a.714.714 0 001.006-.091l3.564-4.277a.711.711 0 000-.932L14.16 7.257a.714.714 0 00-1.097.915l2.565 3.078H7.9a.75.75 0 000 1.5h7.73l-2.565 3.078a.714.714 0 00.091 1.006z" clip-rule="evenodd"/>
                             </svg>
                             Présentation</a></li>
-                    <li class="nav-item mb-2"><a href="#activites" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <li class="nav-item mb-2"><a href="/index.php#activites" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <style>
                                     .slide-6 {
                                         animation: slide-6 1s infinite alternate both cubic-bezier(1, -0.01, 0, 0.98);
@@ -34,7 +34,7 @@
                                 <path class="slide-6" fill="#0A0A30" fill-rule="evenodd" d="M13.155 16.834a.714.714 0 001.006-.091l3.564-4.277a.711.711 0 000-.932L14.16 7.257a.714.714 0 00-1.097.915l2.565 3.078H7.9a.75.75 0 000 1.5h7.73l-2.565 3.078a.714.714 0 00.091 1.006z" clip-rule="evenodd"/>
                             </svg>
                             Activités</a></li>
-                    <li class="nav-item mb-2"><a href="#tarifs" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <li class="nav-item mb-2"><a href="/index.php#tarifs" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <style>
                                     .slide-6 {
                                         animation: slide-6 1s infinite alternate both cubic-bezier(1, -0.01, 0, 0.98);
@@ -49,7 +49,7 @@
                                 <path class="slide-6" fill="#0A0A30" fill-rule="evenodd" d="M13.155 16.834a.714.714 0 001.006-.091l3.564-4.277a.711.711 0 000-.932L14.16 7.257a.714.714 0 00-1.097.915l2.565 3.078H7.9a.75.75 0 000 1.5h7.73l-2.565 3.078a.714.714 0 00.091 1.006z" clip-rule="evenodd"/>
                             </svg>
                             Tarifs</a></li>
-                    <li class="nav-item mb-2"><a href="#organigramme" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <li class="nav-item mb-2"><a href="/index.php#organigramme" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <style>
                                     .slide-6 {
                                         animation: slide-6 1s infinite alternate both cubic-bezier(1, -0.01, 0, 0.98);
@@ -64,7 +64,7 @@
                                 <path class="slide-6" fill="#0A0A30" fill-rule="evenodd" d="M13.155 16.834a.714.714 0 001.006-.091l3.564-4.277a.711.711 0 000-.932L14.16 7.257a.714.714 0 00-1.097.915l2.565 3.078H7.9a.75.75 0 000 1.5h7.73l-2.565 3.078a.714.714 0 00.091 1.006z" clip-rule="evenodd"/>
                             </svg>
                             Organigramme</a></li>
-                    <li class="nav-item mb-2"><a href="#fichesdeposte" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <li class="nav-item mb-2"><a href="/index.php#fichesdeposte" class="nav-link p-0 text-body-secondary"> <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <style>
                                     .slide-6 {
                                         animation: slide-6 1s infinite alternate both cubic-bezier(1, -0.01, 0, 0.98);

@@ -25,7 +25,7 @@
     <!--Insertion d'un menu-->
     <?php include_once '_partials/menu.php' ?>
     <!--    Présentation-->
-    <section id="presentation" class="bg-dark">
+    <section id="presentation" class="bg-light">
         <div class="container">
             <div class="row text-center text-black">
                 <div class="col-md-7 col-xl-7 text-md-start pt-5 shadow rounded-5 bg-secondary p-5">
@@ -112,17 +112,15 @@
                     <div class="card shadow">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition confort</h5>
-                            <p>Véhicule haut de gamme</p>
+                            <p>Véhicules haut de gamme</p>
                             <h1 class="text-success fw-bold">100€ - 300 € / jour</h1>
                             <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Confort' pour des véhicules haut de gamme et confortables. Profitez d'une conduite élégante et sans souci avec nos modèles spacieux, équipés des dernières technologies. Parfait pour des déplacements professionnels ou des voyages en famille, notre sélection garantit une expérience de conduite inégalée.</p>
 
                             <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                                 Voir les véhicules disponibles
                             </button>
-                            <div class="translate-middle badge rounded-pill bg-success">4
-                                <div class="spinner-border spinner-border-sm ms-1" role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </div>
+                            <div class="translate-middle badge rounded-pill bg-success text-black">4
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes rotate{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><rect width="16" height="16" x="4" y="4" stroke="#0A0A30" stroke-width="1.5" rx="8"/><path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M12.021 12l2.325 2.325"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.021 12V6.84" style="animation:rotate 2s linear infinite both;transform-origin:center"/></svg>
                             </div>
 
                             <!-- Modal -->
@@ -176,22 +174,20 @@
 
                 <!--    Carte 2-->
                 <div class="col-lg-4 col-xl-4 p-0 my-auto">
-                    <div class="card border border-danger border-2 shadow">
-                        <div class="card-header text-center fw-bold text-danger">
+                    <div class="card border border-primary border-2 shadow">
+                        <div class="card-header text-center fw-bold text-primary">
                             Laissez vous tenter <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#0A0A30" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
                         </div>
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition classique</h5>
-                            <p>Véhicule abordable</p>
+                            <p>Véhicules abordables</p>
                             <h1 class="text-success fw-bold">30€ - 70€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Classique' pour des véhicules standards à des prix abordables. Idéale pour ceux qui recherchent une option fiable et économique, cette sélection offre des modèles polyvalents pour répondre à vos besoins quotidiens de déplacement. Profitez d'une conduite confortable et pratique sans compromis sur la qualité, et explorez librement votre destination avec notre offre accessible.</p>
-                            <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <button type="button" class="btn btn-primary fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 Voir les véhicules disponibles
                             </button>
-                            <div class="translate-middle badge rounded-pill bg-success">5
-                                <div class="spinner-border spinner-border-sm ms-1" role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </div>
+                            <div class="translate-middle badge rounded-pill bg-success text-black">5
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes rotate{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><rect width="16" height="16" x="4" y="4" stroke="#0A0A30" stroke-width="1.5" rx="8"/><path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M12.021 12l2.325 2.325"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.021 12V6.84" style="animation:rotate 2s linear infinite both;transform-origin:center"/></svg>
                             </div>
 
                             <!-- Modal -->
@@ -257,16 +253,14 @@
                     <div class="card shadow">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition sportive</h5>
-                            <p>Véhicule ultra haut de gamme</p>
+                            <p>Véhicules ultra haut de gamme</p>
                             <h1 class="text-success fw-bold">300€ - 800€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Sportive' pour des véhicules ultra haut de gamme aux performances impressionnantes. Conçue pour les passionnés de conduite, cette sélection offre une expérience dynamique et exaltante. Avec des modèles de pointe dotés de technologies avancées, notre gamme sportive vous promet des sensations fortes sur la route.</p>
                             <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                                 Voir les véhicules disponibles
                             </button>
-                            <div class="translate-middle badge rounded-pill bg-success">3
-                                <div class="spinner-border spinner-border-sm ms-1" role="status">
-                                    <span class="visually-hidden">Loading...</span>
-                                </div>
+                            <div class="translate-middle badge rounded-pill bg-success text-black">3
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes rotate{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><rect width="16" height="16" x="4" y="4" stroke="#0A0A30" stroke-width="1.5" rx="8"/><path stroke="#0A0A30" stroke-linecap="round" stroke-width="1.5" d="M12.021 12l2.325 2.325"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.021 12V6.84" style="animation:rotate 2s linear infinite both;transform-origin:center"/></svg>
                             </div>
 
                             <!-- Modal -->

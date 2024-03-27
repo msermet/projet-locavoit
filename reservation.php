@@ -76,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <div class="w-50 mx-auto shadow my-5 p-4 bg-primary rounded-5 text-white">
         <form action="" method="post" novalidate>
             <div class="mb-3">
-                <h4 class="mb-4 text-secondary text-center">Nous vous recontacterons par mail d'ici quelques minutes pour finaliser la paiement !</h4>
+                <h4 class="mb-4 text-secondary text-center">Nous vous recontacterons par e-mail dans quelques minutes pour finaliser la paiement !</h4>
                 <label for="prenom" class="form-label fw-bold">Prénom*</label>
                 <input type="text"
                        class="form-control <?= (isset($erreurs['prenom'])) ? "border border-3 border-danger" : "" ?>"
