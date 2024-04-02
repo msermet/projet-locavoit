@@ -28,10 +28,10 @@
     <section id="presentation" class="bg-light">
         <div class="container">
             <div class="row text-center text-black">
-                <div class="col-md-7 col-xl-7 text-md-start pt-5 shadow rounded-5 bg-secondary p-5">
+                <div id="cadre-pre" class="col-md-7 col-xl-7 text-md-start pt-5 shadow rounded-5 p-5">
                     <h1>LocaVoit - Location de véhicules</h1>
-                    <h2 class="pt-3">La liberté de rouler pas cher</h2>
-                    <p class="pt-3 fs-6">Louez des véhicules de gammes en France et dans le monde entier. Notre flotte compte plus de 200 voitures de location, dont les modèles proviennent des meilleurs constructeurs automobiles au monde, notamment les favoris allemands tels que BMW, Mercedes, Audi ainsi que bien d'autres encore.
+                    <h3 class="pt-3">Roulez avec aisance, choisissez votre excellence.</h3>
+                    <p class="pt-3 fs-6">LocaVoit propose des services de location de voiture en France avec trois gammes de véhicules : Classique, Confort et Sportive. Notre priorité est de vous offrir des options de qualité, adaptées à tous les besoins, avec un service client attentif. Réservez dès maintenant pour un voyage sans souci avec LocaVoit.
                     </p>
                     <div class="pt-3 text-center">
                         <a href="#pied-de-page"><button class="btn btn-success fs-6 shadow border-2 border-dark text-black" type="button">Nos coordonnées</button></a>
@@ -43,6 +43,12 @@
             </div>
         </div>
     </section>
+
+    <style>
+        #cadre-pre {
+            background-color: #aab7b8;
+        }
+    </style>
     <div class="border-top border-4"></div>
     <!--    activités-->
     <section id="activites">
@@ -113,7 +119,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition confort</h5>
                             <p>Véhicules haut de gamme</p>
-                            <h1 class="text-success fw-bold">100€ - 300 € / jour</h1>
+                            <h1 id="vert" class="fw-bold">100€ - 300 € / jour</h1>
                             <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Confort' pour des véhicules haut de gamme et confortables. Profitez d'une conduite élégante et sans souci avec nos modèles spacieux, équipés des dernières technologies. Parfait pour des déplacements professionnels ou des voyages en famille, notre sélection garantit une expérience de conduite inégalée.</p>
 
                             <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal1">
@@ -174,14 +180,14 @@
 
                 <!--    Carte 2-->
                 <div class="col-lg-4 col-xl-4 p-0 my-auto">
-                    <div class="card border border-primary border-2 shadow">
-                        <div class="card-header text-center fw-bold text-primary">
+                    <div class="card border border-danger border-2 shadow">
+                        <div class="card-header text-center fw-bold text-danger">
                             Laissez vous tenter <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes pulsate{0%,to{transform:scale(1)}50%{transform:scale(.9)}}</style><g style="animation:pulsate .5s ease-in-out infinite both;transform-origin:center center" stroke-width="1.5"><path stroke="#0A0A30" d="M11.515 6.269l.134.132a.5.5 0 00.702 0l.133-.132A4.44 4.44 0 0115.599 5c.578 0 1.15.112 1.684.33a4.41 4.41 0 011.429.939c.408.402.733.88.954 1.406a4.274 4.274 0 010 3.316 4.331 4.331 0 01-.954 1.405l-6.36 6.259a.5.5 0 01-.702 0l-6.36-6.259A4.298 4.298 0 014 9.333c0-1.15.464-2.252 1.29-3.064A4.439 4.439 0 018.401 5c1.168 0 2.288.456 3.114 1.269z"/><path stroke="#265BFF" stroke-linecap="round" stroke-linejoin="round" d="M15.5 7.5c.802.304 1.862 1.43 2 2"/></g></svg>
                         </div>
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition classique</h5>
                             <p>Véhicules abordables</p>
-                            <h1 class="text-success fw-bold">30€ - 70€ / jour</h1>
+                            <h1 id="vert" class="fw-bold">30€ - 70€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Classique' pour des véhicules standards à des prix abordables. Idéale pour ceux qui recherchent une option fiable et économique, cette sélection offre des modèles polyvalents pour répondre à vos besoins quotidiens de déplacement. Profitez d'une conduite confortable et pratique sans compromis sur la qualité, et explorez librement votre destination avec notre offre accessible.</p>
                             <button type="button" class="btn btn-primary fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 Voir les véhicules disponibles
@@ -254,7 +260,7 @@
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Edition sportive</h5>
                             <p>Véhicules ultra haut de gamme</p>
-                            <h1 class="text-success fw-bold">300€ - 800€ / jour</h1>
+                            <h1 id="vert" class="fw-bold">300€ - 800€ / jour</h1>
                             <p class="card-text d-lg-block d-none">Découvrez notre gamme 'Édition Sportive' pour des véhicules ultra haut de gamme aux performances impressionnantes. Conçue pour les passionnés de conduite, cette sélection offre une expérience dynamique et exaltante. Avec des modèles de pointe dotés de technologies avancées, notre gamme sportive vous promet des sensations fortes sur la route.</p>
                             <button type="button" class="btn btn-dark fw-bold ms-5 my-3" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                                 Voir les véhicules disponibles
@@ -307,6 +313,12 @@
             </div>
         </div>
     </section>
+
+    <style>
+        #vert {
+            color: #0f7864;
+        }
+    </style>
     <div class="border-top border-3"></div>
     <!--    Organigramme-->
     <section id="organigramme">
@@ -375,7 +387,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/sophiefon.jpg" class="w-75" alt="...">
+                        <img src="./assets/images/sophie-fon.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal6">
