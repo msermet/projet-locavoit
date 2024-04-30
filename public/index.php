@@ -47,7 +47,7 @@ if (isset($_SESSION["pseudo_client"])) {
             <div class="row text-center text-black">
                 <div id="cadre-pre" class="col-md-7 col-xl-7 text-md-start pt-5 shadow rounded-5 p-5">
                     <?php if (isset($_SESSION['pseudo_client'])) : ?>
-                        <p class="fw-bold pt-5 me-5 fs-5 text-end">Heureux de vous revoir <span class="text-primary"><?= $pseudo_client ?></span> !</p>
+                        <p class="fw-bold pt-5 me-5 fs-5 text-end">Heureux de vous revoir <span id="vert"><?= $pseudo_client ?></span> !</p>
                     <?php endif; ?>
                     <h1>LocaVoit - Location de véhicules</h1>
                     <h3 class="pt-3">Roulez avec aisance, choisissez votre excellence.</h3>
@@ -191,7 +191,7 @@ if (isset($_SESSION["pseudo_client"])) {
             <div id="carouselExampleCaptions" class="carousel carousel-dark slide m-5">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="100">
-                        <img src="./assets/images/mariodasilva.jpg" class="w-75" alt="...">
+                        <img src="./assets/images/personnel/mariodasilva.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal4">
@@ -204,11 +204,12 @@ if (isset($_SESSION["pseudo_client"])) {
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Mario Da Silva</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel1">Mario Da Silva :</h1>
+                                            <a class="ms-2 fs-5" href="./assets/images/fiches-de-poste/fichedeposte-mariodasilva.pdf">Téléchargez la fiche de poste</a>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/fichedeposte-mariodasilva.png" alt="">
+                                            <img class="w-100" src="./assets/images/fiches-de-poste/fichedeposte-mariodasilva.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -216,7 +217,7 @@ if (isset($_SESSION["pseudo_client"])) {
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="100">
-                        <img src="./assets/images/hugorey.jpg" class="w-75" alt="...">
+                        <img src="./assets/images/personnel/hugorey.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal5">
@@ -229,11 +230,12 @@ if (isset($_SESSION["pseudo_client"])) {
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel2">Hugo Rey</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel2">Hugo Rey :</h1>
+                                            <a class="ms-2 fs-5" href="./assets/images/fiches-de-poste/fichedeposte-hugorey.pdf">Téléchargez la fiche de poste</a>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/fichedeposte-hugorey.png" alt="">
+                                            <img class="w-100" src="./assets/images/fiches-de-poste/fichedeposte-hugorey.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +243,7 @@ if (isset($_SESSION["pseudo_client"])) {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/sophie-fon.jpg" class="w-75" alt="...">
+                        <img src="./assets/images/personnel/sophie-fon.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal6">
@@ -254,11 +256,12 @@ if (isset($_SESSION["pseudo_client"])) {
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel3">Sophie Fon</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel3">Sophie Fon :</h1>
+                                            <a class="ms-2 fs-5" href="./assets/images/fiches-de-poste/fichedeposte-sophiefon.pdf">Téléchargez la fiche de poste</a>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/fichedeposte-sophiefon.png" alt="">
+                                            <img class="w-100" src="./assets/images/fiches-de-poste/fichedeposte-sophiefon.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -266,7 +269,7 @@ if (isset($_SESSION["pseudo_client"])) {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/fabricedesjean.jpg" class="w-75" alt="...">
+                        <img src="./assets/images/personnel/fabricedesjean.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal7">
@@ -279,11 +282,12 @@ if (isset($_SESSION["pseudo_client"])) {
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel4">Fabrice Desjean</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel4">Fabrice Desjean :</h1>
+                                            <a class="ms-2 fs-5" href="./assets/images/fiches-de-poste/fichedeposte-fabricedesjean.pdf">Téléchargez la fiche de poste</a>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/fichedeposte-fabricedesjean.png" alt="">
+                                            <img class="w-100" src="./assets/images/fiches-de-poste/fichedeposte-fabricedesjean.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -291,7 +295,7 @@ if (isset($_SESSION["pseudo_client"])) {
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/jeromecorneille.jpg" class="w-75" alt="...">
+                        <img src="./assets/images/personnel/jeromecorneille.jpg" class="w-75" alt="...">
                         <div class="carousel-caption">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-success fw-bold text-black mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal8">
@@ -304,11 +308,12 @@ if (isset($_SESSION["pseudo_client"])) {
                                 <div class="modal-dialog modal-lg modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel5">Jérôme Corneille</h1>
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel5">Jérôme Corneille :</h1>
+                                            <a class="ms-2 fs-5" href="./assets/images/fiches-de-poste/fichedeposte-mariodasilva.pdf">Téléchargez la fiche de poste</a>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <img class="w-100" src="./assets/images/fichedeposte-jeromecorneille.png" alt="">
+                                            <img class="w-100" src="./assets/images/fiches-de-poste/fichedeposte-jeromecorneille.png" alt="">
                                         </div>
                                     </div>
                                 </div>

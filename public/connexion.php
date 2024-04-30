@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         section {
-            padding: 60px 0;
+            padding: 100px 0;
         }
 
     </style>
@@ -93,9 +93,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <body class="bg-light">
 <!--Insertion d'un menu-->
 <?php require_once BASE_PROJET.'/src/_partials/header.php' ?>
-<div class="container">
+<section class="container">
     <h1 class="border-bottom border-3 border-primary pt-5">Connexion</h1>
-    <div class="w-50 mx-auto shadow my-5 p-4 rounded-5 bg-white">
+    <div class="w-50 mx-auto shadow mt-5 p-4 rounded-5 bg-white">
         <form action="" method="post" novalidate>
             <div class="mb-3">
                 <label for="email_client" class="form-label fw-semibold">Email*</label>
@@ -131,7 +131,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
         </form>
     </div>
-</div>
+</section>
+
+<?php require_once BASE_PROJET.'/src/_partials/footer.php' ?>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
