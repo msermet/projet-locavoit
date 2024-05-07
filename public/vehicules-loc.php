@@ -13,8 +13,8 @@ if (isset($_SESSION["pseudo_client"])) {
 
 $idEdition = null;
 $erreur=false;
-if (isset($_GET["id"])) {
-    $idEdition = filter_var($_GET["id"],FILTER_VALIDATE_INT);
+if (!empty($_GET["id_edition"])) {
+    $idEdition = filter_var($_GET["id_edition"],FILTER_VALIDATE_INT);
     $produits = getProduitListe($idEdition);
 
     if ($produits==null) {
@@ -71,9 +71,10 @@ if (!$erreur) {
                                 <div class="card border-dark mb-5 text-center border-2 container bg-white shadow" style="width: 26rem;">
                                     <div class="card-body">
                                         <img height="250px" width="350px" class="rounded-2" src="<?= $produit["image_prod"] ?>" alt="">
-                                        <p class="mt-3 fw-bold fs-6"><?= $produit["designation_prod"] ?></p>
+                                        <h4 class="mt-3 fw-bold"><?= $produit["designation_prod"] ?></h4>
                                         <p class="mt-3 fw-bold fs-6"><?= $produit["commentaire_prod"] ?></p>
-                                        <p class="mt-3 fw-bold fs-6"><?= $produit["prix_prod"] ?>€ ta mere</p>
+                                        <p class="mt-3 fw-bold fs-4 text-primary"><?= $produit["prix_prod"] ?>€ / jour</p>
+                                        <a class="btn btn-success text-black fw-semibold mt-1" href="formulaire-commande.php?id_edition=<?= $idEdition ?>&id_prod=<?= $produit["id_prod"] ?>" role="button">Commander</a>
                                     </div>
                                 </div>
                             </div>

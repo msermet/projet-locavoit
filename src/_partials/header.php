@@ -42,6 +42,9 @@
                                         <li class="nav-item">
                                             <a class="dropdown-item fw-bold text-center text-danger" role="button" href="<?php BASE_PROJET?>./deconnexion.php"><i class="bi bi-box-arrow-right me-2"></i>Se déconnecter</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="dropdown-item fw-bold text-center text-success" role="button" href=""><i class="bi bi-bag-check"></i></i>Mes commandes</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>

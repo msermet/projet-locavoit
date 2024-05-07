@@ -146,7 +146,7 @@ if (isset($_SESSION["pseudo_client"])) {
                                         <h3 class="mt-3 fw-bold"><?= $edition["libelle_edition"] ?></h3>
                                         <p id="vert" class="mt-3 fw-bold fs-2"><?= $edition["prix_mini_edition"] ?>€ - <?= $edition["prix_maxi_edition"] ?>€ / jour</p>
                                         <p class="mt-3 fw-semi fs-6"><?= $edition["description_edition"] ?></p>
-                                        <a class="btn btn-primary fw-semibold mt-3" href="vehicules-loc.php?id=<?= $edition["id_edition"] ?>" role="button">Voir les véhicules disponibles</a>
+                                        <a class="btn btn-primary fw-semibold mt-3" href="vehicules-loc.php?id_edition=<?= $edition["id_edition"] ?>" role="button">Voir les véhicules disponibles</a>
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ if (isset($_SESSION["pseudo_client"])) {
                                         <h3 class="mt-3 fw-bold"><?= $edition["libelle_edition"] ?></h3>
                                         <p id="vert" class="mt-3 fw-bold fs-2"><?= $edition["prix_mini_edition"] ?>€ - <?= $edition["prix_maxi_edition"] ?>€ / jour</p>
                                         <p class="mt-3 fw-semi fs-6"><?= $edition["description_edition"] ?></p>
-                                        <a class="btn btn-primary fw-semibold mt-3" href="vehicules-loc.php?id=<?= $edition["id_edition"] ?>" role="button">Voir les véhicules disponibles</a>
+                                        <a class="btn btn-primary fw-semibold mt-3" href="vehicules-loc.php?id_edition=<?= $edition["id_edition"] ?>" role="button">Voir les véhicules disponibles</a>
                                     </div>
                                 </div>
                             </div>
