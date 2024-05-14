@@ -134,7 +134,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <?php require_once BASE_PROJET.'/src/_partials/header.php' ?>
 <section class="container">
     <h1 class="border-bottom border-3 border-primary pt-5">Inscription</h1>
-    <div class="w-50 mx-auto shadow p-4 rounded-5 bg-white">
+    <div class="w-50 mx-auto shadow mt-5 p-4 rounded-5 bg-white">
         <form action="" method="post" novalidate>
             <div class="mb-3">
                 <label for="pseudo_client" class="form-label fw-semibold">Pseudo*</label>
@@ -169,7 +169,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <div class="mb-3">
                 <label for="email_client" class="form-label fw-semibold">Email*</label>
                 <input type="email"
-                       class="form-control <?= (isset($erreurs['emai_clientl'])) ? "border border-2 border-danger" : "" ?>
+                       class="form-control <?= (isset($erreurs['email_client'])) ? "border border-2 border-danger" : "" ?>
                        form-control <?= (isset($erreurs['email_existe'])) ? "border border-2 border-danger" : "" ?>"
                        id="email_client" name="email_client" value="<?= $email_client?>" placeholder="Saisir un email valide"
                        aria-describedby="emailHelp">
@@ -202,7 +202,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             </div>
             <div class="mb-3">
                 <label for="cp_client" class="form-label fw-semibold">Code postal*</label>
-                <input type="text"
+                <input type="number"
                        class="form-control <?= (isset($erreurs['cp_client'])) ? "border border-2 border-danger" : "" ?>"
                        id="cp_client" name="cp_client" value="<?= $cp_client?>" placeholder="Saisir votre code postal"
                        aria-describedby="emailHelp">
