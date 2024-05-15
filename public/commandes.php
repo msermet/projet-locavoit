@@ -47,19 +47,23 @@ $commandes=getCommandesClient($id_client);
 <section class="container">
     <h1 class="border-bottom border-3 border-primary pt-5">Mes commandes</h1>
     <div class="w-50 mx-auto shadow my-5 p-4 bg-white rounded-5 text-white">
-        <p class="text-secondary fw-bold">Commande la plus récente :</p>
-        <div class="list-group">
-            <?php foreach ($commandes as $commande) : ?>
-                <div class="list-group-item list-group-item-action text-black p-4">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1 fw-semibold fs-5"><?= getEditionCommande($commande["id_edition"])["libelle_edition"] ?></h5>
-                        <small class="fst-italic fs-6 fw-semibold"><?= $commande["date_fr"] ?></small>
+        <?php if (!empty($commandes)): ?>
+            <p class="text-secondary fw-bold">Commande la plus récente :</p>
+            <div class="list-group">
+                <?php foreach ($commandes as $commande) : ?>
+                    <div class="list-group-item list-group-item-action text-black p-4">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1 fw-semibold fs-5"><?= getEditionCommande($commande["id_edition"])["libelle_edition"] ?></h5>
+                            <small class="fst-italic fs-6 fw-semibold"><?= $commande["date_fr"] ?></small>
+                        </div>
+                        <small class="float-end"><a id="fondVert" class="btn fw-bold fs-6 text-light" role="button" href="details-commande.php?id_commande=<?= $commande["id_commande"] ?>">Détails</a></small>
+                        <p class="mb-1 fs-5"><?= getDesignationCommande($commande["id_prod"])["designation_prod"] ?></p>
                     </div>
-                    <small class="float-end"><a id="fondVert" class="btn fw-bold fs-6 text-light" role="button" href="<?php BASE_PROJET?>./connexion.php">Détails</a></small>
-                    <p class="mb-1 fs-5"><?= getDesignationCommande($commande["id_prod"])["designation_prod"] ?></p>
-                </div>
-            <?php endforeach; ?>
-        </div>
+                <?php endforeach; ?>
+            </div>
+        <?php else: ?>
+            <p class="text-secondary fw-bold">Vous n'avez passé aucune commande...</p>
+        <?php endif; ?>
     </div>
 </section>
 <?php require_once BASE_PROJET.'/src/_partials/footer.php' ?>
