@@ -35,3 +35,12 @@ function getMdpClient($email) : array|bool
     $mdp=$recuperation->fetch(PDO::FETCH_ASSOC);
     return $mdp;
 }
+
+function getPrenomClient($idClient) : array|bool
+{
+    $pdo = getConnexion();
+    $recuperation = $pdo->prepare("SELECT prenom_client FROM client WHERE id_client=?");
+    $recuperation->execute([$idClient]);
+    $prenom=$recuperation->fetch(PDO::FETCH_ASSOC);
+    return $prenom;
+}

@@ -50,14 +50,15 @@ if ($commande["id_client"]!=$id_client) {
         }
 
     </style>
-    <title>Réservation</title>
+    <title>LocaVoit - Ma commande</title>
+    <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
 </head>
 <body class="bg-light">
 <!--Insertion d'un menu-->
 <?php require_once BASE_PROJET.'/src/_partials/header.php' ?>
 
 <section class="container">
-    <h1 class="border-bottom border-3 border-primary pt-5">Ma commande :</h1>
+    <h1 class="border-bottom border-3 border-primary pt-5">Ma commande</h1>
     <div class="w-75 mx-auto shadow my-5 p-4 bg-white rounded-5 text-black">
         <?php if (empty($erreur)): ?>
             <div class="invoice">

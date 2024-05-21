@@ -88,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     </style>
     <title>LocaVoit - Connexion</title>
-    <link rel="shortcut icon" href="assets/images/camera-reels.svg" />
+    <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
 </head>
 <body class="bg-light">
 <!--Insertion d'un menu-->

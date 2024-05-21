@@ -34,10 +34,7 @@
                         <ellipse cx="12" cy="15.926" stroke="#0A0A30" stroke-width="1.5" rx="5" ry="2.329"/>
                     </svg>
                 </h5>
-                <p class="text-body-secondary">Remplissez le formulaire de contact :</p>
-                <div class="ms-2">
-                    <a href="<?php BASE_PROJET?>/contact.php"><button class="btn btn-success border-dark border-2" type="button">Cliquez ici</button></a>
-                </div>
+                <p class="text-body-secondary">Contactez nous par e-mail !</p>
             </div>
             <div class="col-md-3">
                 <img class="w-50 float-end" src="<?php BASE_PROJET?>/assets/images/logo-locavoit.png" alt="">

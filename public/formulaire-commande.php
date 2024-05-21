@@ -27,6 +27,7 @@ if (!empty($_GET["id_prod"])) {
     $idProd = filter_var($_GET["id_prod"],FILTER_VALIDATE_INT);
 } else {
     $erreur=true;
+
 }
 
 // Déterminer si le formulaire a été soumis

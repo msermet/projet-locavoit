@@ -38,7 +38,8 @@ $commandes=getCommandesClient($id_client);
         }
 
     </style>
-    <title>Réservation</title>
+    <title>LocaVoit - Mes commandes</title>
+    <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
 </head>
 <body class="bg-light">
 <!--Insertion d'un menu-->

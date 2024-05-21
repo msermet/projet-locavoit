@@ -47,15 +47,12 @@ if (isset($_SESSION["pseudo_client"])) {
             <div class="row text-center text-black">
                 <div id="cadre-pre" class="col-md-7 col-xl-7 text-md-start pt-5 shadow rounded-5 p-5">
                     <?php if (isset($_SESSION['pseudo_client'])) : ?>
-                        <p class="fw-bold pt-5 me-5 fs-5 text-end">Heureux de vous revoir <span id="vert"><?= $pseudo_client ?></span> !</p>
+                        <p class="fw-bold pt-3 me-5 fs-5 text-end">Heureux de vous revoir <span id="vert"><?= $pseudo_client ?></span> !</p>
                     <?php endif; ?>
                     <h1>LocaVoit - Location de véhicules</h1>
                     <h3 class="pt-3">Roulez avec aisance, choisissez votre excellence.</h3>
                     <p class="pt-3 fs-6">LocaVoit propose des services de location de voiture en France avec trois gammes de véhicules : Classique, Confort et Sportive. Notre priorité est de vous offrir des options de qualité, adaptées à tous les besoins, avec un service client attentif. Réservez dès maintenant pour un voyage sans souci avec LocaVoit.
                     </p>
-                    <div class="pt-3 text-center">
-                        <a href="<?php BASE_PROJET?>/index.php#pied-de-page"><button class="btn btn-success fs-6 shadow border-2 border-dark text-black" type="button">Une question à nous poser ?</button></a>
-                    </div>
                 </div>
                 <div class="col-md-5">
                     <img id="img-presentation" class="d-md-block d-none mx-auto pt-5" src="./assets/images/logo-locavoit.png" alt="Logo Spotify" />
