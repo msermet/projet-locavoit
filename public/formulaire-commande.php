@@ -122,7 +122,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
 
     </style>
-    <title>Réservation</title>
+    <title>Locavoit - Formulaire commande</title>
+    <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
 </head>
 <body class="bg-light">
 <!--Insertion d'un menu-->
@@ -130,7 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <section class="container">
     <?php if (!$erreur): ?>
-        <h1 class="border-bottom border-3 border-primary pt-5">Réservation du véhicule</h1>
+        <h1 class="border-bottom border-3 border-primary pt-5">Qui réserve le véhicule ?</h1>
         <div class="w-50 mx-auto shadow my-5 p-4 bg-white rounded-5 text-white">
             <form action="" method="post" novalidate>
                 <div class="mb-3">

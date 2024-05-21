@@ -38,7 +38,7 @@ $commandes=getCommandesClient($id_client);
         }
 
     </style>
-    <title>LocaVoit - Mes commandes</title>
+    <title>LocaVoit - Mes locations</title>
     <link rel="shortcut icon" href="./assets/images/logo-locavoit.png" />
 </head>
 <body class="bg-light">
@@ -46,10 +46,10 @@ $commandes=getCommandesClient($id_client);
 <?php require_once BASE_PROJET.'/src/_partials/header.php' ?>
 
 <section class="container">
-    <h1 class="border-bottom border-3 border-primary pt-5">Mes commandes</h1>
+    <h1 class="border-bottom border-3 border-primary pt-5">Mes locations</h1>
     <div class="w-50 mx-auto shadow my-5 p-4 bg-white rounded-5 text-white">
         <?php if (!empty($commandes)): ?>
-            <p class="text-secondary fw-bold">Commande la plus récente :</p>
+            <p class="text-secondary fw-bold">Réservations de la plus récente à la plus ancienne :</p>
             <div class="list-group">
                 <?php foreach ($commandes as $commande) : ?>
                     <div class="list-group-item list-group-item-action text-black p-4">

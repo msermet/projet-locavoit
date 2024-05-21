@@ -24,7 +24,7 @@ function postCommande($idProd,$idClient,$idEdition,$prenom,$nom,$email,$adresse,
 function getCommandesClient($id) : array|bool
 {
     $pdo = getConnexion();
-    $recuperation = $pdo->prepare("SELECT id_prod,id_client,id_edition,prenom_client,nom_client,email_client,adresse_client,ville_client,cp_client,DATE_FORMAT(date_commande,'%d/%m/%Y') AS date_fr,date_retour,id_commande FROM acheter WHERE id_client=?");
+    $recuperation = $pdo->prepare("SELECT id_prod,id_client,id_edition,prenom_client,nom_client,email_client,adresse_client,ville_client,cp_client,DATE_FORMAT(date_commande,'%d/%m/%Y') AS date_fr,date_retour,id_commande FROM acheter WHERE id_client=? ORDER BY id_commande DESC;");
     $recuperation->execute([$id]);
     return $recuperation->fetchAll(PDO::FETCH_ASSOC);
 }
@@ -48,7 +48,7 @@ function getEditionCommande($idEdition) : array|bool
 function getCommandeClient($idCommande) : array|bool
 {
     $pdo = getConnexion();
-    $recuperation = $pdo->prepare("SELECT DATEDIFF(date_retour,date_commande) AS nb_jours,id_prod,id_client,id_edition,prenom_client,nom_client,email_client,adresse_client,ville_client,cp_client,DATE_FORMAT(date_commande,'%d/%m/%Y') AS date_fr,DATE_FORMAT(date_retour,'%d/%m/%Y') AS date_retour,id_commande FROM acheter WHERE id_commande=?");
+    $recuperation = $pdo->prepare("SELECT DATEDIFF(date_retour,date_commande) AS nb_jours,id_prod,id_client,id_edition,prenom_client,nom_client,email_client,adresse_client,ville_client,cp_client,DATE_FORMAT(date_commande,'%d/%m/%Y') AS date_fr,DATE_FORMAT(date_retour,'%d/%m/%Y') AS date_retour,id_commande FROM acheter WHERE id_commande=?;");
     $recuperation->execute([$idCommande]);
     return $recuperation->fetch(PDO::FETCH_ASSOC);
 }
