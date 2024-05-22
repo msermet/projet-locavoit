@@ -30,6 +30,16 @@ if (!empty($_GET["id_prod"])) {
 
 }
 
+$prodLoues=getProduitsLoues();
+
+foreach ($prodLoues as $prodLoue) {
+    if ($prodLoue["id_prod"]==$idProd) {
+        header("Location: ../index.php");
+    }
+}
+
+
+
 // Déterminer si le formulaire a été soumis
 // Utilisation d'une variable superglobale $_SERVER
 // $_SERVER : tableau associatif contenant des informations sur la requête HTTP

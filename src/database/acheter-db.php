@@ -60,3 +60,11 @@ function getPrixCommande($idProd) : array|bool
     $recuperation->execute([$idProd]);
     return $recuperation->fetch(PDO::FETCH_ASSOC);
 }
+
+function getProduitsLoues() : array|bool
+{
+    $pdo = getConnexion();
+    $recuperation = $pdo->prepare("SELECT id_prod FROM acheter");
+    $recuperation->execute();
+    return $recuperation->fetchAll(PDO::FETCH_ASSOC);
+}

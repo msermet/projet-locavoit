@@ -2,6 +2,7 @@
 require_once '../base.php';
 require_once BASE_PROJET . '/src/database/produit-db.php';
 require_once BASE_PROJET . '/src/database/edition-db.php';
+require_once BASE_PROJET . '/src/database/acheter-db.php';
 
 // Démarrer/créer une session
 session_start();    // PREMIERE INSTRUCTION
@@ -27,6 +28,8 @@ if (!empty($_GET["id_edition"])) {
 if (!$erreur) {
     $libelleEdition=getLibelleEdition($idEdition);
 }
+
+$prodLoues=getProduitsLoues();
 
 ?>
 
@@ -67,14 +70,23 @@ if (!$erreur) {
                 <div class="container text-center">
                     <div class="row ">
                         <?php foreach ($produits as $produit) : ?>
+                            <?php $loue=false; ?>
                             <div class="col-xs-12 col-lg-6 col-xl-5 col-xxl-4">
                                 <div class="card border-dark mb-5 text-center border-2 container bg-white shadow" style="width: 26rem;">
                                     <div class="card-body">
+                                        <?php foreach ($prodLoues as $prodLoue) : ?>
+                                            <?php if ($prodLoue["id_prod"]==$produit["id_prod"]) : ?>
+                                                <p class="mt-3 fw-bold fs-6 text-danger">Produit indisponible</p>
+                                                <?php $loue=true; ?>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
                                         <img height="250px" width="350px" class="rounded-2" src="<?= $produit["image_prod"] ?>" alt="">
                                         <h4 class="mt-3 fw-bold"><?= $produit["designation_prod"] ?></h4>
                                         <p class="mt-3 fw-bold fs-6"><?= $produit["commentaire_prod"] ?></p>
                                         <p class="mt-3 fw-bold fs-4 text-primary"><?= $produit["prix_prod"] ?>€ / jour</p>
-                                        <a class="btn btn-success text-black fw-semibold mt-1" href="formulaire-commande.php?id_edition=<?= $idEdition ?>&id_prod=<?= $produit["id_prod"] ?>" role="button">Commander</a>
+                                        <?php if (!$loue) : ?>
+                                            <a class="btn btn-success text-black fw-semibold mt-1" href="formulaire-commande.php?id_edition=<?= $idEdition ?>&id_prod=<?= $produit["id_prod"] ?>" role="button">Commander</a>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                             </div>
